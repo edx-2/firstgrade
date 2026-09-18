@@ -56,6 +56,7 @@
       `<span class="t-emoji">${mod.emoji}</span>` +
       `<span class="t-title">${mod.title}</span>` +
       `<span class="t-desc">${mod.desc}</span>` +
+      `<span class="t-lb" title="Lernbereich laut LehrplanPLUS">📚 ${mod.lb}</span>` +
       `<span class="t-stars">${starRow(best)}</span>`;
     t.onclick = () => startModule(mod);
     return t;
@@ -80,6 +81,7 @@
     mod = m; idx = 0; firstTryCount = 0;
     player.classList.remove('hidden');
     document.body.style.overflow = 'hidden';
+    if (m.intro) Speech.say(m.intro); // Fuchsi begrüßt; erste Aufgabe reiht sich dahinter ein
     runActivity();
   }
 
@@ -97,24 +99,29 @@
     $('#roundStarCount').textContent = firstTryCount;
   }
 
-  function feedback(good) {
+  function feedback(good, fact) {
     const f = $('#feedback');
-    f.innerHTML = `<div class="bubble ${good?'good':'oops'}">${good?'🎉 '+Util.praise():'💪 '+Util.cheer()}</div>`;
+    const extra = fact ? `<span class="fact">💡 ${fact}</span>` : '';
+    f.innerHTML = `<div class="bubble ${good?'good':'oops'}${fact?' with-fact':''}">${good?'🎉 '+Util.praise():'💪 '+Util.cheer()}${extra}</div>`;
     f.classList.add('show');
     clearTimeout(feedback._t);
-    feedback._t = setTimeout(() => f.classList.remove('show'), 1300);
+    feedback._t = setTimeout(() => f.classList.remove('show'), fact ? 3400 : 1300);
   }
 
   const ctx = {
     speak: t => Speech.say(t),
+    autoSay: t => Speech.queue(t),
     miss: () => feedback(false),
     solved: firstTry => {
+      const a = mod.activities[idx];
       if (firstTry) firstTryCount++;
-      feedback(true);
+      feedback(true, a.fact);
       Speech.say(Util.praise());
+      if (a.fact) Speech.queue(a.fact); // kleine Erklärung nach dem Lob
       idx++;
       setProgress();
-      setTimeout(() => { idx < mod.activities.length ? runActivity() : finish(); }, 1100);
+      // mit Erklärung etwas mehr Zeit zum Zuhören lassen
+      setTimeout(() => { idx < mod.activities.length ? runActivity() : finish(); }, a.fact ? 3400 : 1100);
     }
   };
 
@@ -134,7 +141,10 @@
 
     $('#progressFill').style.width = '100%';
     Sound.win(); Confetti.burst(160);
-    Speech.say(`Geschafft! Du hast ${stars} ${stars===1?'Stern':'Sterne'} gesammelt. ` + Util.praise());
+    const tip = stars === 3 ? 'Alles beim ersten Versuch richtig. Fantastisch!'
+              : stars === 2 ? 'Fast perfekt! Spiel nochmal und hol dir den dritten Stern.'
+              : 'Übung macht den Meister. Spiel gleich nochmal!';
+    Speech.say(`Geschafft! Du hast ${stars} ${stars===1?'Stern':'Sterne'} gesammelt. ${tip}`);
 
     const done = MODULES.filter(x => bestStars(x.id) > 0).length;
     stage.innerHTML = '';
@@ -143,7 +153,7 @@
       `<div class="big">🦊</div>` +
       `<h2>Geschafft!</h2>` +
       `<div class="stars-earned">${'⭐'.repeat(stars)}${'☆'.repeat(3-stars)}</div>` +
-      `<p>Du hast diese Runde super gemeistert!<br>Insgesamt: <b>${totalStars()} ⭐</b> · ${done}/${MODULES.length} Spiele gespielt</p>`;
+      `<p>${tip}<br>Insgesamt: <b>${totalStars()} ⭐</b> · ${done}/${MODULES.length} Spiele gespielt</p>`;
     const again = E('button', 'btn-primary', '🔁 Nochmal spielen');
     again.onclick = () => startModule(mod);
     const back = E('button', 'btn-ghost', '🏠 Zur Übersicht');

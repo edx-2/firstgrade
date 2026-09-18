@@ -12,7 +12,8 @@ const Games = (() => {
   function speakBtn(text, ctx, autoplay = true) {
     const b = E('button', 'speak-btn', '🔊 Vorlesen');
     b.onclick = () => ctx.speak(text);
-    if (autoplay) setTimeout(() => ctx.speak(text), 350);
+    // reiht sich hinter Intro/Lob ein, statt es zu unterbrechen
+    if (autoplay) setTimeout(() => (ctx.autoSay || ctx.speak)(text), 350);
     return b;
   }
 

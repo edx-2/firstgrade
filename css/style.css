@@ -88,6 +88,8 @@ b{font-weight:800}
 .tile .t-title{font-family:'Baloo 2';font-size:1.22rem;font-weight:800}
 .tile .t-desc{font-size:.9rem;opacity:.95;font-weight:500;line-height:1.25}
 .tile .t-fach{position:absolute;top:12px;right:14px;font-size:.72rem;font-weight:700;background:rgba(255,255,255,.28);padding:3px 10px;border-radius:999px}
+.tile .t-lb{font-size:.66rem;font-weight:600;opacity:.85;background:rgba(0,0,0,.16);
+  padding:3px 9px;border-radius:8px;align-self:flex-start;margin-top:2px;line-height:1.3}
 .tile .t-stars{margin-top:auto;font-size:1.05rem;letter-spacing:2px}
 .tile .t-stars .earned{filter:drop-shadow(0 1px 0 #b98700)}
 .tile .t-stars .empty{opacity:.4}
@@ -187,6 +189,10 @@ b{font-weight:800}
 .feedback.show .bubble{transform:translateY(0)}
 .feedback .bubble.good{color:var(--hsu-d)}
 .feedback .bubble.oops{color:var(--deutsch-d)}
+.feedback .bubble.with-fact{flex-direction:column;gap:4px;border-radius:26px;
+  max-width:min(560px,92vw);text-align:center}
+.feedback .bubble .fact{font-family:'Fredoka';font-size:.92rem;font-weight:600;
+  color:var(--ink);opacity:.85;line-height:1.35}
 
 /* result screen */
 .result{display:flex;flex-direction:column;align-items:center;gap:18px;text-align:center}

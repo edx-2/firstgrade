@@ -43,6 +43,11 @@ const Speech = (() => {
     say(text, rate = 0.9) {
       if (!synth || !text) return;
       synth.cancel();
+      this.queue(text, rate);
+    },
+    /** wie say(), aber ohne laufende Ausgabe zu unterbrechen (reiht ein) */
+    queue(text, rate = 0.9) {
+      if (!synth || !text) return;
       const u = new SpeechSynthesisUtterance(String(text));
       u.lang = 'de-DE'; u.rate = rate; u.pitch = 1.05;
       if (voice) u.voice = voice;
