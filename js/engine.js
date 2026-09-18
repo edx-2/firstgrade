@@ -70,7 +70,7 @@ const Speech = (() => {
   function utter(text, opts) {
     const u = new SpeechSynthesisUtterance(text);
     u.lang = (voice && voice.lang) || 'de-DE';
-    u.rate  = opts.rate  || (isAndroid ? 1.0 : 0.95);
+    u.rate  = opts.rate  || (isAndroid ? 1.2 : 1.1);
     u.pitch = opts.pitch || 1.08;
     if (voice) u.voice = voice;
     return u;
@@ -107,7 +107,7 @@ const Speech = (() => {
     letter(ch) {
       const map = { A:'a', E:'e', I:'i', O:'o', U:'u', M:'mmm', L:'lll', S:'sss',
         R:'rrr', F:'fff', N:'nnn', T:'t', W:'w' };
-      this.say(map[ch] || ch, { rate: 0.8 });
+      this.say(map[ch] || ch, { rate: 0.9 }); // Laute bewusst etwas langsamer
     }
   };
 })();
