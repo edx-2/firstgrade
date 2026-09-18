@@ -8,6 +8,14 @@
 const Games = (() => {
   const E = Util.el;
 
+  /* Vorlese-Knopf – bei JEDER Aufgabe verfügbar ---------------- */
+  function speakBtn(text, ctx, autoplay = true) {
+    const b = E('button', 'speak-btn', '🔊 Vorlesen');
+    b.onclick = () => ctx.speak(text);
+    if (autoplay) setTimeout(() => ctx.speak(text), 350);
+    return b;
+  }
+
   /* Wiederverwendbar: "Wähle eine richtige Antwort" ------------- */
   function renderChoice(stage, cfg, ctx) {
     let firstTry = true;
@@ -20,12 +28,9 @@ const Games = (() => {
     if (cfg.heroHtml) stage.appendChild(cfg.heroHtml);
     else if (cfg.hero) stage.appendChild(E('div', 'q-hero', cfg.hero));
 
-    if (cfg.say) {
-      const sp = E('button', 'speak-btn', '🔊 Nochmal hören');
-      sp.onclick = () => ctx.speak(cfg.say);
-      stage.appendChild(sp);
-      setTimeout(() => ctx.speak(cfg.say), 350);
-    }
+    // Aufgabenstellung ist immer vorlesbar (Fallback: die Frage/Titel)
+    const sayText = cfg.say || cfg.title;
+    if (sayText) stage.appendChild(speakBtn(sayText, ctx));
 
     const cols = cfg.cols || (cfg.options.length <= 2 ? 2 : cfg.options.length === 4 ? 4 : 3);
     const grid = E('div', 'options cols-' + cols);
@@ -99,9 +104,10 @@ const Games = (() => {
 
   /* --- Anlaut: Womit beginnt das Wort? --- */
   function anlaut(stage, a, ctx) {
+    const frage = a.q || 'Welcher Buchstabe ist am Anfang?';
     renderChoice(stage, {
-      title: a.q || 'Welcher Buchstabe ist am Anfang?',
-      sub: a.word, hero: a.emoji, say: a.word,
+      title: frage,
+      sub: a.word, hero: a.emoji, say: `${frage} ${a.word}.`,
       options: a.letters.map(L => ({ label: L, correct: L === a.answer })),
       cols: a.letters.length
     }, ctx);
@@ -125,7 +131,9 @@ const Games = (() => {
   /* --- Memory / Paare finden --- */
   function pairs(stage, a, ctx) {
     stage.innerHTML = '';
-    stage.appendChild(E('div', 'q-title', a.q || 'Finde die Paare!'));
+    const frage = a.q || 'Finde die Paare!';
+    stage.appendChild(E('div', 'q-title', frage));
+    stage.appendChild(speakBtn(frage, ctx));
     let firstTry = true, matched = 0, open = null, lock = false;
     const deck = [];
     a.pairs.forEach((p, gi) => { deck.push({ g: gi, v: p[0] }); deck.push({ g: gi, v: p[1] }); });
@@ -160,7 +168,9 @@ const Games = (() => {
   /* --- Sortieren in Körbe (Drag & Drop + Tippen) --- */
   function sort(stage, a, ctx) {
     stage.innerHTML = '';
-    stage.appendChild(E('div', 'q-title', a.q || 'Sortiere richtig ein!'));
+    const frage = a.q || 'Sortiere richtig ein!';
+    stage.appendChild(E('div', 'q-title', frage));
+    stage.appendChild(speakBtn(`${frage} Ziehen oder antippen, dann den richtigen Korb wählen.`, ctx));
     let firstTry = true, placed = 0;
     const total = a.items.length;
     let selected = null; // für Tipp-Bedienung (Tablet)
@@ -210,8 +220,9 @@ const Games = (() => {
   /* --- Buchstaben / Zahlen nachspuren (Canvas) --- */
   function trace(stage, a, ctx) {
     stage.innerHTML = '';
-    stage.appendChild(E('div', 'q-title', a.q || `Spure nach: ${a.char}`));
-    if (a.say !== false) { const sp = E('button','speak-btn','🔊 Hören'); sp.onclick=()=>ctx.speak(a.sayText||a.char); stage.appendChild(sp); setTimeout(()=>ctx.speak(a.sayText||a.char),300); }
+    const frage = a.q || `Spure den Buchstaben nach: ${a.char}`;
+    stage.appendChild(E('div', 'q-title', frage));
+    stage.appendChild(speakBtn(`${frage}. Das klingt so: ${a.sayText || a.char}`, ctx));
 
     const size = Math.min(360, Math.floor(innerWidth * 0.8));
     const wrap = E('div', 'trace-wrap'); wrap.style.width = size + 'px'; wrap.style.height = size + 'px';
