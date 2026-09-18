@@ -172,7 +172,8 @@ const MODULES = [
   intro:'Zähle langsam mit dem Finger mit. Du schaffst das!',
   activities:[
     C('🍎',3), C('🎈',4), C('🐟',5), C('⭐',6),
-    { type:'sequence', q:'Welche Farbe kommt als Nächstes?', seq:['🔴','🔵','🔴','🔵'], options:['🔴','🟢','🔵'], answer:'🔴' },
+    { type:'sequence', q:'Welche Farbe kommt als Nächstes?', seq:['🔴','🔵','🔴','🔵'], options:['🔴','🟢','🔵'], answer:'🔴',
+      say:'Rot, blau, rot, blau. Welche Farbe kommt als Nächstes?' },
     { type:'mc', q:'Wo sind MEHR?', say:'Wo sind mehr Äpfel?', options:[{e:'🍎🍎🍎',c:true},{e:'🍎🍎'}], cols:2 }
   ]},
 { id:'ma2', fach:'mathe', monat:2, emoji:'🔟', title:'Zahlen bis 10',
@@ -215,8 +216,10 @@ const MODULES = [
       fact:'Ein Kreis ist ganz rund und hat keine einzige Ecke.' },
     { type:'mc', q:'Welche Form ist ein Viereck?', say:'Welche Form ist ein Viereck?', options:[{e:'🟦',c:true},{e:'🔺'},{e:'🔴'}], cols:3,
       fact:'Ein Viereck hat vier Ecken und vier Seiten.' },
-    { type:'sequence', q:'Setze das Muster fort:', seq:['🔺','🔵','🔺','🔵'], options:['🔺','🟦','🔵'], answer:'🔺' },
-    { type:'sequence', q:'Setze das Muster fort:', seq:['⬛','⬛','🔵','⬛','⬛','🔵'], options:['⬛','🔵','🔺'], answer:'⬛' },
+    { type:'sequence', q:'Setze das Muster fort:', seq:['🔺','🔵','🔺','🔵'], options:['🔺','🟦','🔵'], answer:'🔺',
+      say:'Dreieck, Kreis, Dreieck, Kreis. Was kommt als Nächstes?' },
+    { type:'sequence', q:'Setze das Muster fort:', seq:['⬛','⬛','🔵','⬛','⬛','🔵'], options:['⬛','🔵','🔺'], answer:'⬛',
+      say:'Quadrat, Quadrat, Kreis. Quadrat, Quadrat, Kreis. Was kommt als Nächstes?' },
     { type:'sort', q:'Sortiere: rund oder eckig?',
       buckets:[{name:'rund',key:'r',emoji:'🔵'},{name:'eckig',key:'e',emoji:'🟦'}],
       items:[{emoji:'🔵',key:'r'},{emoji:'🟦',key:'e'},{emoji:'🔴',key:'r'},{emoji:'🔺',key:'e'},{emoji:'🟠',key:'r'},{emoji:'⬛',key:'e'}] }
@@ -395,6 +398,7 @@ const MODULES = [
   intro:'Der Frühling ist da! Alles blüht und wächst.',
   activities:[
     { type:'sequence', q:'Wie wächst eine Blume? Was kommt als Nächstes?', seq:['🌰','🌱'], options:['🌿','🍂','🍎'], answer:'🌿',
+      say:'Zuerst der Samen, dann der kleine Keimling. Was kommt als Nächstes?',
       fact:'Erst Samen, dann Keimling, dann Pflanze, dann Blüte!' },
     { type:'mc', q:'Was braucht eine Pflanze zum Wachsen?', say:'Was braucht eine Pflanze zum Wachsen?',
       options:[{e:'💧☀️',t:'Wasser & Sonne',c:true},{e:'🍫',t:'Schokolade'},{e:'📺',t:'Fernsehen'}], cols:3,
@@ -429,6 +433,7 @@ const MODULES = [
       options:[{t:'6',c:true},{t:'4'},{t:'8'}], cols:3,
       fact:'Alle Insekten haben sechs Beine. Spinnen haben acht, sie sind keine Insekten.' },
     { type:'sequence', q:'Vom Ei zum Schmetterling – was kommt als Nächstes?', seq:['🥚','🐛'], options:['🦋','🐝','🐌'], answer:'🦋',
+      say:'Zuerst das Ei, dann kriecht die Raupe heraus. Was kommt danach?',
       fact:'Aus der Raupe wird eine Puppe, und daraus schlüpft der Schmetterling.' },
     { type:'sort', q:'Wann passiert das?',
       buckets:[{name:'Morgen',key:'m',emoji:'🌅'},{name:'Abend',key:'a',emoji:'🌆'}],

@@ -28,37 +28,86 @@ const Sound = (() => {
   };
 })();
 
-/* ---------- Sprachausgabe (deutsch) ---------- */
+/* ---------- Sprachausgabe (deutsch) ----------
+   Natürlicher klingen ohne Server:
+   - beste verfügbare Stimme per Scoring (Natural/Online > Google > Rest)
+   - Satz für Satz sprechen -> flüssigere Satzmelodie, bes. auf Android
+   - Android-Bug umgehen: speak() direkt nach cancel() wird verschluckt
+   - freundlichere Grundtonhöhe, normales Tempo (0.9 klang gelangweilt) */
 const Speech = (() => {
   const synth = window.speechSynthesis;
+  const isAndroid = /android/i.test(navigator.userAgent);
   let voice = null;
+
+  function score(v) {
+    if (!/^de/i.test(v.lang)) return -1;
+    let s = 1;
+    const n = v.name.toLowerCase();
+    if (/natural|neural|online/.test(n)) s += 8; // z. B. Edge "Katja Online (Natural)"
+    if (!v.localService) s += 4;                 // Netzwerk-Stimmen klingen voller
+    if (/google/.test(n)) s += 3;
+    if (/katja|vicki|amala|anna|petra|hedda/.test(n)) s += 2;
+    if (/^de[-_]de/i.test(v.lang)) s += 2;       // de-DE vor de-AT/CH
+    return s;
+  }
   function pick() {
     if (!synth) return;
-    const vs = synth.getVoices();
-    voice = vs.find(v => /de[-_]/i.test(v.lang) && /google|deutschland|katja|hedda|anna|petra/i.test(v.name))
-         || vs.find(v => /de[-_]/i.test(v.lang)) || null;
+    const best = synth.getVoices().filter(v => score(v) > 0)
+      .sort((a, b) => score(b) - score(a))[0];
+    if (best) voice = best;
   }
   if (synth) { pick(); synth.onvoiceschanged = pick; }
+
+  // Chrome (Desktop) schläft bei längeren Ausgaben ein – sanft wachhalten
+  if (synth && !isAndroid) setInterval(() => {
+    if (synth.speaking && !synth.paused) synth.resume();
+  }, 5000);
+
+  // kurze Sätze statt eines langen Blocks -> natürlichere Betonung
+  const sentences = t => (String(t).match(/[^.!?…]+[.!?…]*/g) || [String(t)])
+    .map(s => s.trim()).filter(Boolean);
+
+  function utter(text, opts) {
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = (voice && voice.lang) || 'de-DE';
+    u.rate  = opts.rate  || (isAndroid ? 1.0 : 0.95);
+    u.pitch = opts.pitch || 1.08;
+    if (voice) u.voice = voice;
+    return u;
+  }
+  function enqueue(text, opts) { sentences(text).forEach(s => synth.speak(utter(s, opts))); }
+
+  // Nach cancel() kurz warten (Android verschluckt sonst den Anfang).
+  // epoch sorgt dafür, dass ein neues say() ältere, noch wartende Texte verwirft.
+  let gate = 0, epoch = 0;
+  function later(fn) {
+    const my = epoch;
+    const wait = Math.max(0, gate - Date.now());
+    const run = () => { if (my === epoch) fn(); };
+    wait ? setTimeout(run, wait + 5) : run();
+  }
+  const norm = o => typeof o === 'number' ? { rate: o } : (o || {});
+
   return {
-    say(text, rate = 0.9) {
+    /** spricht sofort (bricht Laufendes ab). opts: {rate, pitch} oder Zahl (rate) */
+    say(text, opts) {
       if (!synth || !text) return;
+      epoch++;
       synth.cancel();
-      this.queue(text, rate);
+      gate = Date.now() + (isAndroid ? 150 : 40);
+      later(() => enqueue(text, norm(opts)));
     },
     /** wie say(), aber ohne laufende Ausgabe zu unterbrechen (reiht ein) */
-    queue(text, rate = 0.9) {
+    queue(text, opts) {
       if (!synth || !text) return;
-      const u = new SpeechSynthesisUtterance(String(text));
-      u.lang = 'de-DE'; u.rate = rate; u.pitch = 1.05;
-      if (voice) u.voice = voice;
-      synth.speak(u);
+      later(() => enqueue(text, norm(opts)));
     },
-    stop() { if (synth) synth.cancel(); },
+    stop() { if (synth) { epoch++; gate = 0; synth.cancel(); } },
     /** Buchstaben-Laut vorlesen (nicht Buchstabenname) */
     letter(ch) {
       const map = { A:'a', E:'e', I:'i', O:'o', U:'u', M:'mmm', L:'lll', S:'sss',
-        R:'rrr', F:'fff', N:'nnn', T:'t', W:'w', O2:'o' };
-      this.say(map[ch] || ch, 0.8);
+        R:'rrr', F:'fff', N:'nnn', T:'t', W:'w' };
+      this.say(map[ch] || ch, { rate: 0.8 });
     }
   };
 })();

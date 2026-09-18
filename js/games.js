@@ -97,7 +97,7 @@ const Games = (() => {
     const q = `${a.a} ${a.op} ${a.b} = ?`;
     renderChoice(stage, {
       title: q, sub: 'Zähl die blauen Felder!', hero: null, heroHtml: frame,
-      say: `${a.a} ${a.op === '+' ? 'plus' : 'minus'} ${a.b}`,
+      say: `Wie viel ist ${a.a} ${a.op === '+' ? 'plus' : 'minus'} ${a.b}? Zähl die Felder, wenn du magst.`,
       options: [...opts].sort((x, y) => x - y).map(v => ({ label: String(v), correct: v === res })),
       cols: 4
     }, ctx);
@@ -121,8 +121,13 @@ const Games = (() => {
     a.seq.forEach(s => row.appendChild(E('span', null, s)));
     const q = E('span', null, '❓'); q.style.opacity = '.55'; row.appendChild(q);
     const isText = s => /^[A-Za-zÄÖÜäöüß0-9]+$/.test(s); // Text/Zahl vs. Emoji
+    const frage = a.q || 'Was kommt als Nächstes?';
+    // Lesbare Folgen (Zahlen, Wörter) werden mit vorgelesen – sonst hört
+    // ein Nicht-Leser die Reihe nie. Emoji-Folgen brauchen ein eigenes a.say.
+    const spoken = a.say || (a.seq.every(isText) && a.seq.length > 1
+      ? `${a.seq.join(', ')}. ${frage}` : frage);
     renderChoice(stage, {
-      title: a.q || 'Was kommt als Nächstes?', say: a.q || 'Was kommt als Nächstes?',
+      title: frage, say: spoken,
       heroHtml: row,
       options: a.options.map(o => ({ label: isText(o) ? o : null, emoji: isText(o) ? null : o, correct: o === a.answer })),
       cols: a.options.length

@@ -116,7 +116,7 @@
       const a = mod.activities[idx];
       if (firstTry) firstTryCount++;
       feedback(true, a.fact);
-      Speech.say(Util.praise());
+      Speech.say(Util.praise(), { rate: 1.05, pitch: 1.25 }); // fröhlich!
       if (a.fact) Speech.queue(a.fact); // kleine Erklärung nach dem Lob
       idx++;
       setProgress();
