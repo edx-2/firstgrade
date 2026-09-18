@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Lernwelt – Erste Klasse 🦊</title>
+  <meta name="description" content="Interaktive Lernspiele für die 1. Klasse nach dem bayerischen LehrplanPLUS – Deutsch, Mathematik und Sachkunde." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦊</text></svg>" />
+</head>
+<body>
+  <!-- Hub -->
+  <div id="hub">
+    <header class="topbar">
+      <div class="brand">
+        <span class="mascot" id="mascot">🦊</span>
+        <div>
+          <h1>Lernwelt</h1>
+          <p class="subtitle">Erste Klasse · Bayern</p>
+        </div>
+      </div>
+      <div class="star-counter" id="starCounter" title="Deine gesammelten Sterne">
+        <span class="star-big">⭐</span>
+        <span id="starTotal">0</span>
+      </div>
+    </header>
+
+    <div class="intro">
+      <p id="welcomeText">Hallo! Ich bin <b>Fu&shy;chsi</b> der Fuchs. Such dir ein Spiel aus und sammle ganz viele Sterne! 🌟</p>
+      <button class="speak-hint" id="speakWelcome" aria-label="Vorlesen">🔊 Vorlesen</button>
+    </div>
+
+    <nav class="filters" id="subjectFilters" aria-label="Fach auswählen">
+      <button class="filter active" data-fach="alle">🌈 Alle</button>
+      <button class="filter" data-fach="deutsch">📖 Deutsch</button>
+      <button class="filter" data-fach="mathe">🔢 Mathe</button>
+      <button class="filter" data-fach="hsu">🌍 Sachkunde</button>
+    </nav>
+
+    <main id="board" class="board"><!-- Monatsabschnitte werden hier eingefügt --></main>
+
+    <footer class="sitefoot">
+      <p>Inhalte orientiert am <a href="https://www.lehrplanplus.bayern.de/" target="_blank" rel="noopener">LehrplanPLUS Bayern</a>, Jahrgangsstufe 1. Mit ♥ zum Lernen gemacht.</p>
+      <button id="resetProgress" class="linkbtn">Fortschritt zurücksetzen</button>
+    </footer>
+  </div>
+
+  <!-- Spiel-Overlay -->
+  <div id="player" class="player hidden" role="dialog" aria-modal="true">
+    <div class="player-bar">
+      <button id="exitGame" class="round-btn" aria-label="Zurück zur Übersicht">✕</button>
+      <div class="progress"><div id="progressFill" class="progress-fill"></div></div>
+      <div class="round-stars" id="roundStars">⭐ <span id="roundStarCount">0</span></div>
+    </div>
+    <div id="stage" class="stage"><!-- aktuelle Aufgabe --></div>
+    <div id="feedback" class="feedback"></div>
+  </div>
+
+  <canvas id="confettiCanvas" class="confetti-canvas"></canvas>
+
+  <script src="js/data.js"></script>
+  <script src="js/engine.js"></script>
+  <script src="js/games.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
