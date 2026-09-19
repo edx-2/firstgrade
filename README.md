@@ -23,7 +23,8 @@ Fach auswählen. Jedes Modul ist ein kleines Lernspiel aus mehreren Aufgaben.
 - Multiple-Choice mit Bildern
 
 ### Kindgerecht & motivierend
-- 🔊 **Deutsche Sprachausgabe** (liest Aufgaben & Wörter vor – auch für Kinder, die noch nicht lesen können)
+- 🔊 **Natürliche deutsche Sprachausgabe** aus vorproduzierten Neural-TTS-Clips
+  (liest jede Aufgabe vor – auch für Kinder, die noch nicht lesen können)
 - ⭐ **Sterne sammeln**, 🎉 Konfetti & fröhliche Töne als Belohnung
 - Großer, bunter, tippfreundlicher Aufbau (Tablet-tauglich)
 - Fortschritt wird lokal im Browser gespeichert (`localStorage`)
@@ -36,10 +37,54 @@ Komponenten. Läuft direkt auf **GitHub Pages**.
 ```
 index.html
 css/style.css
-js/data.js      <- der komplette Lerninhalt (Lehrplan)
-js/engine.js    <- Ton, Sprachausgabe, Konfetti
-js/games.js     <- die Spielarten
-js/app.js       <- Übersicht & Spielablauf
+js/data.js        <- der komplette Lerninhalt (Lehrplan)
+js/speakables.js  <- gemeinsame Quelle aller Sprechtexte
+js/engine.js      <- Ton, Sprachausgabe, Konfetti
+js/games.js       <- die Spielarten
+js/app.js         <- Übersicht & Spielablauf
+assets/audio/de/  <- vorproduzierte Sprach-Clips + manifest.json
+tools/            <- Audio-Pipeline (nur zur Entwicklung nötig)
+```
+
+## 🔊 Audio-Pipeline
+
+Die Web Speech API klingt je nach Gerät blechern oder gelangweilt – besonders auf
+Android. Darum werden alle Sprechtexte **einmalig offline** mit
+**Microsoft-Edge-Neural-Stimmen** (`de-DE-KatjaNeural`, kostenlos, kein API-Key)
+zu MP3s gerendert und mit ausgeliefert. Die Seite bleibt damit vollständig statisch.
+
+Zur Laufzeit gilt: **Clip vorhanden → Clip abspielen**, sonst automatisch
+Web-Speech als Fallback. Es geht also nie Sprache verloren.
+
+### Neu erzeugen (nach Änderungen an `js/data.js`)
+
+```bash
+pip install edge-tts
+./tools/build-audio.sh          # oder die zwei Schritte einzeln:
+node tools/extract-phrases.mjs  # sammelt alle Sätze -> tools/phrases.json
+python tools/synthesize_audio.py # rendert fehlende MP3s + manifest.json
+```
+
+Die Pipeline arbeitet **inkrementell**: Es werden nur Clips erzeugt, die noch
+nicht existieren. Neue oder geänderte Aufgaben kosten also nur wenige Sekunden.
+Danach die neuen Dateien in `assets/audio/de/` mit committen.
+
+**Wie die Zuordnung funktioniert:** `js/speakables.js` ist die einzige Quelle der
+Sprechtexte und wird von Browser *und* Pipeline genutzt. Jeder Satz bekommt einen
+FNV-1a-Hash als Dateinamen (`assets/audio/de/<hash>.mp3`). Ändert sich ein Text,
+ändert sich der Hash – der alte Clip wird einfach nicht mehr nachgeschlagen.
+
+| Kategorie | Tempo / Tonhöhe | Wofür |
+|---|---|---|
+| `task` | +8 % | Aufgabenstellungen |
+| `intro` | +6 %, heller | Fuchsis Modul-Begrüßung |
+| `fact` | +4 % | Erklär-Fakten (ruhig) |
+| `praise` | +15 %, deutlich heller | Lob – kurz & fröhlich |
+
+Aufräumen alter Clips (optional, nach vielen Textänderungen):
+
+```bash
+node tools/extract-phrases.mjs && python tools/prune_audio.py
 ```
 
 ## Lokal starten

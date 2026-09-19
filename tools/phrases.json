@@ -1,0 +1,1221 @@
+{
+  "generated": "2026-09-18T21:04:50.348Z",
+  "count": 243,
+  "phrases": [
+    {
+      "hash": "d6708ecf",
+      "text": "Super!",
+      "cat": "praise"
+    },
+    {
+      "hash": "c84ee765",
+      "text": "Klasse!",
+      "cat": "praise"
+    },
+    {
+      "hash": "31b4557e",
+      "text": "Toll gemacht!",
+      "cat": "praise"
+    },
+    {
+      "hash": "99cd055f",
+      "text": "Wow!",
+      "cat": "praise"
+    },
+    {
+      "hash": "5f9b9c37",
+      "text": "Prima!",
+      "cat": "praise"
+    },
+    {
+      "hash": "7d5791ac",
+      "text": "Richtig!",
+      "cat": "praise"
+    },
+    {
+      "hash": "78895e39",
+      "text": "Spitze!",
+      "cat": "praise"
+    },
+    {
+      "hash": "6c2dc466",
+      "text": "Bravo!",
+      "cat": "praise"
+    },
+    {
+      "hash": "de66c609",
+      "text": "Fast! Probier nochmal.",
+      "cat": "cheer"
+    },
+    {
+      "hash": "f121c65c",
+      "text": "Ups, versuch es nochmal!",
+      "cat": "cheer"
+    },
+    {
+      "hash": "cda2c5de",
+      "text": "Nicht ganz – du schaffst das!",
+      "cat": "cheer"
+    },
+    {
+      "hash": "30e6ebf0",
+      "text": "Kein Problem, nochmal!",
+      "cat": "cheer"
+    },
+    {
+      "hash": "2198faf8",
+      "text": "Hallo! Ich bin Fuchsi der Fuchs. Such dir ein Spiel aus und sammle ganz viele Sterne!",
+      "cat": "static"
+    },
+    {
+      "hash": "da0f8376",
+      "text": "Wuff... ähm, ich meine: Los geht's!",
+      "cat": "static"
+    },
+    {
+      "hash": "acd55f2c",
+      "text": "Erst nachspuren! Dann drückst du auf fertig.",
+      "cat": "static"
+    },
+    {
+      "hash": "48c32da6",
+      "text": "Geschafft! Du hast 1 Stern gesammelt. Übung macht den Meister. Spiel gleich nochmal!",
+      "cat": "finish"
+    },
+    {
+      "hash": "8022c327",
+      "text": "Geschafft! Du hast 2 Sterne gesammelt. Fast perfekt! Spiel nochmal und hol dir den dritten Stern.",
+      "cat": "finish"
+    },
+    {
+      "hash": "dcb2c77b",
+      "text": "Geschafft! Du hast 3 Sterne gesammelt. Alles beim ersten Versuch richtig. Fantastisch!",
+      "cat": "finish"
+    },
+    {
+      "hash": "d07057ea",
+      "text": "Spitz die Ohren, kleiner Fuchs! Mit welchem Laut beginnen die Wörter?",
+      "cat": "intro"
+    },
+    {
+      "hash": "9b2a3b16",
+      "text": "Welcher Buchstabe ist am Anfang? Affe.",
+      "cat": "task"
+    },
+    {
+      "hash": "3245234a",
+      "text": "Welcher Buchstabe ist am Anfang? Maus.",
+      "cat": "task"
+    },
+    {
+      "hash": "0e84ab49",
+      "text": "Welcher Buchstabe ist am Anfang? Oma.",
+      "cat": "task"
+    },
+    {
+      "hash": "c76e5dd3",
+      "text": "Welcher Buchstabe ist am Anfang? Sonne.",
+      "cat": "task"
+    },
+    {
+      "hash": "af44e1e1",
+      "text": "Spure den Buchstaben nach: A. Das klingt so: a",
+      "cat": "task"
+    },
+    {
+      "hash": "c619c0db",
+      "text": "Spure den Buchstaben nach: M. Das klingt so: mmm",
+      "cat": "task"
+    },
+    {
+      "hash": "854e294b",
+      "text": "Klatsch die Silben mit den Händen mit: Ba-na-ne!",
+      "cat": "intro"
+    },
+    {
+      "hash": "942bc122",
+      "text": "Sonne. Klatsch mit: Son-ne. Wie viele Silben?",
+      "cat": "task"
+    },
+    {
+      "hash": "6039fb73",
+      "text": "Son-ne. Zweimal geklatscht, zwei Silben!",
+      "cat": "fact"
+    },
+    {
+      "hash": "52fbf095",
+      "text": "Banane. Klatsch mit: Ba-na-ne. Wie viele Silben?",
+      "cat": "task"
+    },
+    {
+      "hash": "ed5bcc9c",
+      "text": "Ba-na-ne. Dreimal geklatscht, drei Silben!",
+      "cat": "fact"
+    },
+    {
+      "hash": "58b7121f",
+      "text": "Welcher Buchstabe ist am Anfang? Igel.",
+      "cat": "task"
+    },
+    {
+      "hash": "7ff34ae7",
+      "text": "Welcher Buchstabe ist am Anfang? Nase.",
+      "cat": "task"
+    },
+    {
+      "hash": "93d610cc",
+      "text": "Welcher Buchstabe ist am Anfang? Tomate.",
+      "cat": "task"
+    },
+    {
+      "hash": "b8a9ec11",
+      "text": "Spure den Buchstaben nach: E. Das klingt so: e",
+      "cat": "task"
+    },
+    {
+      "hash": "318700fc",
+      "text": "Wow, du liest schon Wörter! Lies langsam, Buchstabe für Buchstabe.",
+      "cat": "intro"
+    },
+    {
+      "hash": "0d2f51a3",
+      "text": "Lies das Wort. O. M. A.",
+      "cat": "task"
+    },
+    {
+      "hash": "516a35ee",
+      "text": "Lies das Wort. M. A. U. S.",
+      "cat": "task"
+    },
+    {
+      "hash": "42786175",
+      "text": "Lies das Wort. S. O. N. N. E.",
+      "cat": "task"
+    },
+    {
+      "hash": "9d4c7ea5",
+      "text": "Lies das Wort. R. O. S. E.",
+      "cat": "task"
+    },
+    {
+      "hash": "7a0236de",
+      "text": "Lies das Wort. M. O. N. D.",
+      "cat": "task"
+    },
+    {
+      "hash": "3ed6a435",
+      "text": "Reime klingen am Ende gleich: Hase und Nase!",
+      "cat": "intro"
+    },
+    {
+      "hash": "e73bf656",
+      "text": "Was reimt sich auf Haus?",
+      "cat": "task"
+    },
+    {
+      "hash": "21abe383",
+      "text": "Haus und Maus klingen am Ende gleich: aus!",
+      "cat": "fact"
+    },
+    {
+      "hash": "8dd67f32",
+      "text": "Was reimt sich auf Hase?",
+      "cat": "task"
+    },
+    {
+      "hash": "52257b38",
+      "text": "Was reimt sich auf Katze?",
+      "cat": "task"
+    },
+    {
+      "hash": "7b48487a",
+      "text": "Was reimt sich auf Tür?",
+      "cat": "task"
+    },
+    {
+      "hash": "19e598af",
+      "text": "Jeder Buchstabe hat einen großen und einen kleinen Bruder.",
+      "cat": "intro"
+    },
+    {
+      "hash": "17fbe21c",
+      "text": "Finde Groß- und Kleinbuchstaben!",
+      "cat": "task"
+    },
+    {
+      "hash": "54c1bf97",
+      "text": "Finde die Paare!",
+      "cat": "task"
+    },
+    {
+      "hash": "04a3afb2",
+      "text": "Welcher ist der große Buchstabe zu n?",
+      "cat": "task"
+    },
+    {
+      "hash": "ad759dd7",
+      "text": "Welcher ist der kleine Buchstabe zu B? Schau ganz genau hin!",
+      "cat": "task"
+    },
+    {
+      "hash": "85fdb425",
+      "text": "b, d und p sehen sich ähnlich. Beim b zeigt der Bauch nach rechts oben!",
+      "cat": "fact"
+    },
+    {
+      "hash": "72977765",
+      "text": "Spure den Buchstaben nach: B. Das klingt so: b",
+      "cat": "task"
+    },
+    {
+      "hash": "41e79406",
+      "text": "Lies den Satz in Ruhe und such das passende Bild.",
+      "cat": "intro"
+    },
+    {
+      "hash": "a3945b89",
+      "text": "Lies: Der Ball ist rot.",
+      "cat": "task"
+    },
+    {
+      "hash": "73b498e5",
+      "text": "Lies: Die Sonne scheint.",
+      "cat": "task"
+    },
+    {
+      "hash": "a0c41988",
+      "text": "Lies: Die Katze trinkt Milch.",
+      "cat": "task"
+    },
+    {
+      "hash": "0e5af77f",
+      "text": "Lies: Ich esse einen Apfel.",
+      "cat": "task"
+    },
+    {
+      "hash": "8b9fda85",
+      "text": "Lies: Der Vogel sitzt im Baum.",
+      "cat": "task"
+    },
+    {
+      "hash": "4664b6ef",
+      "text": "Manche Laute klingen ganz besonders: sch, ei und au!",
+      "cat": "intro"
+    },
+    {
+      "hash": "afb9e096",
+      "text": "Womit beginnt das Wort? Schaf.",
+      "cat": "task"
+    },
+    {
+      "hash": "d4190755",
+      "text": "Sch schreibt man mit drei Buchstaben: S, C und H.",
+      "cat": "fact"
+    },
+    {
+      "hash": "293af6cd",
+      "text": "Womit beginnt das Wort? Schule.",
+      "cat": "task"
+    },
+    {
+      "hash": "853b83ab",
+      "text": "In welchem Wort hörst du ei?",
+      "cat": "task"
+    },
+    {
+      "hash": "39a6e00b",
+      "text": "In welchem Wort hörst du au?",
+      "cat": "task"
+    },
+    {
+      "hash": "e3aca47c",
+      "text": "Sprich das Wort ganz langsam. Dann hörst du den fehlenden Buchstaben.",
+      "cat": "intro"
+    },
+    {
+      "hash": "3cf4f2af",
+      "text": "Sonne. Welcher Buchstabe fehlt?",
+      "cat": "task"
+    },
+    {
+      "hash": "a654b83d",
+      "text": "Ball. Welcher Buchstabe fehlt?",
+      "cat": "task"
+    },
+    {
+      "hash": "b9fb167b",
+      "text": "Fisch. Welcher Buchstabe fehlt?",
+      "cat": "task"
+    },
+    {
+      "hash": "7dcd638d",
+      "text": "Hund. Welcher Buchstabe fehlt?",
+      "cat": "task"
+    },
+    {
+      "hash": "500242eb",
+      "text": "Baum. Welcher Buchstabe fehlt?",
+      "cat": "task"
+    },
+    {
+      "hash": "253819e3",
+      "text": "Baum schreibt man mit au. Das a kommt zuerst!",
+      "cat": "fact"
+    },
+    {
+      "hash": "f7cb0662",
+      "text": "Der, die oder das? Sprich das Wort leise vor dich hin.",
+      "cat": "intro"
+    },
+    {
+      "hash": "4919bde0",
+      "text": "Sortiere: der, die oder das? Ziehen oder antippen, dann den richtigen Korb wählen.",
+      "cat": "task"
+    },
+    {
+      "hash": "724d392e",
+      "text": "Welches Wort ist ein Nomen, also ein Namenwort?",
+      "cat": "task"
+    },
+    {
+      "hash": "ac5be2a4",
+      "text": "Nomen sind Namen für Dinge, Tiere und Menschen. Man schreibt sie groß!",
+      "cat": "fact"
+    },
+    {
+      "hash": "7353e627",
+      "text": "Und noch einmal: Welches Wort ist ein Nomen?",
+      "cat": "task"
+    },
+    {
+      "hash": "a0e8a52a",
+      "text": "Der, die oder das? Welcher Artikel passt zu Maus?",
+      "cat": "task"
+    },
+    {
+      "hash": "0d57b8ba",
+      "text": "Es heißt die Maus. Probier es aus: Die kleine Maus rennt schnell!",
+      "cat": "fact"
+    },
+    {
+      "hash": "d02960dc",
+      "text": "Du bist schon ein richtiger Leseprofi. Viel Spaß bei den Geschichten!",
+      "cat": "intro"
+    },
+    {
+      "hash": "67dafec1",
+      "text": "Lea geht mit ihrem Hund in den Park. Wen nimmt Lea mit?",
+      "cat": "task"
+    },
+    {
+      "hash": "a97e2627",
+      "text": "Tom malt ein Bild für seine Oma. Für wen ist das Bild?",
+      "cat": "task"
+    },
+    {
+      "hash": "8a7ed0c5",
+      "text": "Welches Wort schreibt man groß?",
+      "cat": "task"
+    },
+    {
+      "hash": "e5c71a6b",
+      "text": "Blume ist ein Nomen. Alle Nomen schreibt man groß!",
+      "cat": "fact"
+    },
+    {
+      "hash": "ea256ad1",
+      "text": "Zähle langsam mit dem Finger mit. Du schaffst das!",
+      "cat": "intro"
+    },
+    {
+      "hash": "8175f30c",
+      "text": "Wie viele sind das?",
+      "cat": "task"
+    },
+    {
+      "hash": "ea487231",
+      "text": "Rot, blau, rot, blau. Welche Farbe kommt als Nächstes?",
+      "cat": "task"
+    },
+    {
+      "hash": "486ac2e4",
+      "text": "Wo sind mehr Äpfel?",
+      "cat": "task"
+    },
+    {
+      "hash": "3ce02c03",
+      "text": "Die Zahlen bis zehn warten schon auf dich!",
+      "cat": "intro"
+    },
+    {
+      "hash": "33425999",
+      "text": "Welche Zahl ist das? Neun.",
+      "cat": "task"
+    },
+    {
+      "hash": "f0f9365f",
+      "text": "Die 9 sieht aus wie eine 6, die auf dem Kopf steht!",
+      "cat": "fact"
+    },
+    {
+      "hash": "c75e7c8e",
+      "text": "1, 2, 3, 4. Welche Zahl kommt als Nächstes?",
+      "cat": "task"
+    },
+    {
+      "hash": "8fb1042a",
+      "text": "Spure die Zahl nach: 8. Das klingt so: acht",
+      "cat": "task"
+    },
+    {
+      "hash": "212fe143",
+      "text": "Plus heißt: Es kommt etwas dazu. Das Zwanzigerfeld hilft dir.",
+      "cat": "intro"
+    },
+    {
+      "hash": "a29065c2",
+      "text": "Wie viel ist 3 plus 2? Zähl die Felder, wenn du magst.",
+      "cat": "task"
+    },
+    {
+      "hash": "ab6a0af3",
+      "text": "Wie viel ist 4 plus 4? Zähl die Felder, wenn du magst.",
+      "cat": "task"
+    },
+    {
+      "hash": "af41c6b6",
+      "text": "Wie viel ist 5 plus 4? Zähl die Felder, wenn du magst.",
+      "cat": "task"
+    },
+    {
+      "hash": "9be57508",
+      "text": "Wie viel ist 6 plus 3? Zähl die Felder, wenn du magst.",
+      "cat": "task"
+    },
+    {
+      "hash": "82d63f90",
+      "text": "Wie viel ist 2 plus 7? Zähl die Felder, wenn du magst.",
+      "cat": "task"
+    },
+    {
+      "hash": "fb15b4a1",
+      "text": "Auf dem Teller sind zwei Kekse. Mama legt drei dazu. Wie viele sind es jetzt?",
+      "cat": "task"
+    },
+    {
+      "hash": "955c4828",
+      "text": "2 plus 3 ist 5. Plus heißt: Es kommt etwas dazu!",
+      "cat": "fact"
+    },
+    {
+      "hash": "e2c855a3",
+      "text": "Welche Aufgabe ergibt zehn?",
+      "cat": "task"
+    },
+    {
+      "hash": "a3469426",
+      "text": "6 und 4 sind Zahlenfreunde: Zusammen ergeben sie 10!",
+      "cat": "fact"
+    },
+    {
+      "hash": "243ddbe0",
+      "text": "Minus heißt: Es geht etwas weg.",
+      "cat": "intro"
+    },
+    {
+      "hash": "ace168c7",
+      "text": "Wie viel ist 6 minus 2? Zähl die Felder, wenn du magst.",
+      "cat": "task"
+    },
+    {
+      "hash": "ed6ae0cf",
+      "text": "Wie viel ist 7 minus 3? Zähl die Felder, wenn du magst.",
+      "cat": "task"
+    },
+    {
+      "hash": "58aa10e0",
+      "text": "Wie viel ist 9 minus 4? Zähl die Felder, wenn du magst.",
+      "cat": "task"
+    },
+    {
+      "hash": "baf5f5f9",
+      "text": "Wie viel ist 10 minus 5? Zähl die Felder, wenn du magst.",
+      "cat": "task"
+    },
+    {
+      "hash": "afd4a5f2",
+      "text": "Du hast acht Kekse und isst drei auf. Wie viele bleiben übrig?",
+      "cat": "task"
+    },
+    {
+      "hash": "4939b30b",
+      "text": "8 minus 3 ist 5. Minus heißt: Es geht etwas weg!",
+      "cat": "fact"
+    },
+    {
+      "hash": "32efa57f",
+      "text": "Welche Form ist ein Dreieck?",
+      "cat": "task"
+    },
+    {
+      "hash": "32b4ab00",
+      "text": "Ein Dreieck hat drei Ecken und drei Seiten. Darum heißt es Drei-Eck!",
+      "cat": "fact"
+    },
+    {
+      "hash": "dcc0ee00",
+      "text": "Formen sind überall: Schau dich mal um!",
+      "cat": "intro"
+    },
+    {
+      "hash": "100dd324",
+      "text": "Welche Form ist ein Kreis?",
+      "cat": "task"
+    },
+    {
+      "hash": "a01089b1",
+      "text": "Ein Kreis ist ganz rund und hat keine einzige Ecke.",
+      "cat": "fact"
+    },
+    {
+      "hash": "b89c6891",
+      "text": "Welche Form ist ein Viereck?",
+      "cat": "task"
+    },
+    {
+      "hash": "8be76e88",
+      "text": "Ein Viereck hat vier Ecken und vier Seiten.",
+      "cat": "fact"
+    },
+    {
+      "hash": "c0c31260",
+      "text": "Dreieck, Kreis, Dreieck, Kreis. Was kommt als Nächstes?",
+      "cat": "task"
+    },
+    {
+      "hash": "9e16317a",
+      "text": "Quadrat, Quadrat, Kreis. Quadrat, Quadrat, Kreis. Was kommt als Nächstes?",
+      "cat": "task"
+    },
+    {
+      "hash": "06a4879d",
+      "text": "Sortiere: rund oder eckig? Ziehen oder antippen, dann den richtigen Korb wählen.",
+      "cat": "task"
+    },
+    {
+      "hash": "abaf7418",
+      "text": "Jetzt wird es spannend: die Zahlen bis zwanzig!",
+      "cat": "intro"
+    },
+    {
+      "hash": "4cf81fa6",
+      "text": "11, 12, 13, 14. Welche Zahl kommt als Nächstes?",
+      "cat": "task"
+    },
+    {
+      "hash": "ec27c6a8",
+      "text": "2, 4, 6, 8. Zähle in 2er-Schritten:",
+      "cat": "task"
+    },
+    {
+      "hash": "a5903eb8",
+      "text": "2, 4, 6, 8, 10 – das sind die geraden Zahlen!",
+      "cat": "fact"
+    },
+    {
+      "hash": "5a12e1ea",
+      "text": "Welche Zahl ist größer?",
+      "cat": "task"
+    },
+    {
+      "hash": "8c56bb5f",
+      "text": "Welche Zahl ist das? Zwanzig.",
+      "cat": "task"
+    },
+    {
+      "hash": "b6dbe42b",
+      "text": "Die 20 hat eine 2 vorne und eine 0 hinten: zwei volle Zehner!",
+      "cat": "fact"
+    },
+    {
+      "hash": "3f90dd85",
+      "text": "Du bist schon ein Rechenfuchs! Zähl im Feld nach, wenn du magst.",
+      "cat": "intro"
+    },
+    {
+      "hash": "904cf6a8",
+      "text": "Wie viel ist 8 plus 5? Zähl die Felder, wenn du magst.",
+      "cat": "task"
+    },
+    {
+      "hash": "09d1ab92",
+      "text": "Wie viel ist 7 plus 6? Zähl die Felder, wenn du magst.",
+      "cat": "task"
+    },
+    {
+      "hash": "c958bce2",
+      "text": "Wie viel ist 9 plus 4? Zähl die Felder, wenn du magst.",
+      "cat": "task"
+    },
+    {
+      "hash": "cc9f55b0",
+      "text": "Wie viel ist 13 minus 5? Zähl die Felder, wenn du magst.",
+      "cat": "task"
+    },
+    {
+      "hash": "74f517f0",
+      "text": "Wie viel ist 16 minus 8? Zähl die Felder, wenn du magst.",
+      "cat": "task"
+    },
+    {
+      "hash": "4126f5e0",
+      "text": "5 plus 8 ist dasselbe wie 8 plus wie viel?",
+      "cat": "task"
+    },
+    {
+      "hash": "1e7e56da",
+      "text": "Beim Plus darfst du die Zahlen tauschen. Das Ergebnis bleibt gleich!",
+      "cat": "fact"
+    },
+    {
+      "hash": "dd54dd77",
+      "text": "Verdopple die Sieben! Was ist 7 plus 7?",
+      "cat": "task"
+    },
+    {
+      "hash": "4c14eda1",
+      "text": "7 plus 7 ist 14. Verdoppeln heißt: die gleiche Zahl noch einmal dazu.",
+      "cat": "fact"
+    },
+    {
+      "hash": "cd5e2baa",
+      "text": "Heute spielen wir Einkaufen: Wir rechnen mit Geld!",
+      "cat": "intro"
+    },
+    {
+      "hash": "5a1aafe1",
+      "text": "Wie viel Geld ist das? Jede Münze ist ein Euro.",
+      "cat": "task"
+    },
+    {
+      "hash": "7fcc3bd4",
+      "text": "Und jetzt? Jede Münze ist ein Euro.",
+      "cat": "task"
+    },
+    {
+      "hash": "74fc9109",
+      "text": "Was kostet wohl mehr Geld?",
+      "cat": "task"
+    },
+    {
+      "hash": "5903eff8",
+      "text": "Ein Fahrrad kostet viele hundert Euro, ein Bonbon nur ein paar Cent.",
+      "cat": "fact"
+    },
+    {
+      "hash": "22a3fb28",
+      "text": "Du hast zwei Euro und bekommst drei Euro dazu. Wie viel hast du jetzt?",
+      "cat": "task"
+    },
+    {
+      "hash": "874b0ebb",
+      "text": "Das Eis kostet zwei Euro. Du bezahlst mit fünf Euro. Wie viel Geld bekommst du zurück?",
+      "cat": "task"
+    },
+    {
+      "hash": "6db29ff2",
+      "text": "5 minus 2 ist 3. Das nennt man Rückgeld!",
+      "cat": "fact"
+    },
+    {
+      "hash": "7863966a",
+      "text": "Tick, tack! Heute lernst du die Uhr kennen.",
+      "cat": "intro"
+    },
+    {
+      "hash": "b70033b7",
+      "text": "Schau auf die Uhr. Wie viel Uhr ist es?",
+      "cat": "task"
+    },
+    {
+      "hash": "c18c7461",
+      "text": "Der kleine Zeiger zeigt die Stunde an.",
+      "cat": "fact"
+    },
+    {
+      "hash": "d13648f9",
+      "text": "Und jetzt? Wie viel Uhr ist es?",
+      "cat": "task"
+    },
+    {
+      "hash": "35bf7e46",
+      "text": "Welcher Wochentag kommt nach Montag?",
+      "cat": "task"
+    },
+    {
+      "hash": "6f8e46fe",
+      "text": "Eine Woche hat sieben Tage: Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag und Sonntag.",
+      "cat": "fact"
+    },
+    {
+      "hash": "8d499e0d",
+      "text": "Wann machst du das? Ziehen oder antippen, dann den richtigen Korb wählen.",
+      "cat": "task"
+    },
+    {
+      "hash": "cb38c9a1",
+      "text": "Knobelaufgaben für schlaue Füchse. Lies genau!",
+      "cat": "intro"
+    },
+    {
+      "hash": "2e310e62",
+      "text": "Was ist länger?",
+      "cat": "task"
+    },
+    {
+      "hash": "511b4626",
+      "text": "Was ist schwerer?",
+      "cat": "task"
+    },
+    {
+      "hash": "e626322c",
+      "text": "Ein Elefant wiegt so viel wie vier Autos!",
+      "cat": "fact"
+    },
+    {
+      "hash": "45de772c",
+      "text": "Welches Bild ist symmetrisch, also spiegelgleich?",
+      "cat": "task"
+    },
+    {
+      "hash": "ad3fca3d",
+      "text": "Beim Schmetterling sehen beide Flügel gleich aus. Das heißt symmetrisch.",
+      "cat": "fact"
+    },
+    {
+      "hash": "69e106e8",
+      "text": "Anna hat vier Äpfel und pflückt drei dazu. Wie viele hat sie dann?",
+      "cat": "task"
+    },
+    {
+      "hash": "1e49be09",
+      "text": "Im Nest sind fünf Eier. Zwei Küken schlüpfen. Wie viele Eier sind noch da?",
+      "cat": "task"
+    },
+    {
+      "hash": "4db4c3ee",
+      "text": "Herzlich willkommen in der Schule! Hier lernen wir zusammen.",
+      "cat": "intro"
+    },
+    {
+      "hash": "71af342d",
+      "text": "Was tut man in der Klasse, wenn man etwas sagen will?",
+      "cat": "task"
+    },
+    {
+      "hash": "65c319b9",
+      "text": "Wenn alle sich melden, kommt jeder mal dran. Das ist fair!",
+      "cat": "fact"
+    },
+    {
+      "hash": "bf8b4207",
+      "text": "Womit riechst du?",
+      "cat": "task"
+    },
+    {
+      "hash": "2836ebe3",
+      "text": "Womit hörst du?",
+      "cat": "task"
+    },
+    {
+      "hash": "cdc9b6d1",
+      "text": "Du hast fünf Sinne: sehen, hören, riechen, schmecken und fühlen.",
+      "cat": "fact"
+    },
+    {
+      "hash": "c3664361",
+      "text": "Was gehört in die Schule? Ziehen oder antippen, dann den richtigen Korb wählen.",
+      "cat": "task"
+    },
+    {
+      "hash": "8d1ca0ac",
+      "text": "Draußen ist Herbst. Was passiert jetzt in der Natur?",
+      "cat": "intro"
+    },
+    {
+      "hash": "ab727487",
+      "text": "Welches Tier sammelt Nüsse für den Winter?",
+      "cat": "task"
+    },
+    {
+      "hash": "fde03531",
+      "text": "Das Eichhörnchen vergisst manche Nüsse. Daraus wachsen neue Bäume!",
+      "cat": "fact"
+    },
+    {
+      "hash": "cd65bacd",
+      "text": "Was macht der Igel im Winter?",
+      "cat": "task"
+    },
+    {
+      "hash": "b16e66ff",
+      "text": "Der Igel schläft den ganzen Winter in einem kuscheligen Laubhaufen.",
+      "cat": "fact"
+    },
+    {
+      "hash": "cc9900a7",
+      "text": "Welche Jahreszeit kommt nach dem Herbst?",
+      "cat": "task"
+    },
+    {
+      "hash": "0d167c81",
+      "text": "Die vier Jahreszeiten sind: Frühling, Sommer, Herbst und Winter.",
+      "cat": "fact"
+    },
+    {
+      "hash": "a30796d2",
+      "text": "Was passt zum Herbst? Ziehen oder antippen, dann den richtigen Korb wählen.",
+      "cat": "task"
+    },
+    {
+      "hash": "f8ba9da2",
+      "text": "Augen auf im Straßenverkehr! Du weißt bestimmt schon viel.",
+      "cat": "intro"
+    },
+    {
+      "hash": "cb00e7fc",
+      "text": "Die Ampel ist rot. Was machst du?",
+      "cat": "task"
+    },
+    {
+      "hash": "ed23e388",
+      "text": "Bei Rot bleibst du immer stehen, auch wenn kein Auto kommt.",
+      "cat": "fact"
+    },
+    {
+      "hash": "3b95f72d",
+      "text": "Die Ampel ist grün. Was machst du?",
+      "cat": "task"
+    },
+    {
+      "hash": "b5b5d455",
+      "text": "Auch bei Grün schaust du kurz: Halten die Autos wirklich an?",
+      "cat": "fact"
+    },
+    {
+      "hash": "f3bd8374",
+      "text": "Bevor du über die Straße gehst: Was machst du zuerst?",
+      "cat": "task"
+    },
+    {
+      "hash": "14c19d33",
+      "text": "Erst schauen, dann gehen: links, rechts und noch einmal links!",
+      "cat": "fact"
+    },
+    {
+      "hash": "d7be4c5d",
+      "text": "Wo gehst du sicher über die Straße?",
+      "cat": "task"
+    },
+    {
+      "hash": "22f49dec",
+      "text": "Am Zebrastreifen halten die Autos für dich an. Schau trotzdem immer selbst!",
+      "cat": "fact"
+    },
+    {
+      "hash": "1622c0a1",
+      "text": "Was trägst du beim Radfahren auf dem Kopf?",
+      "cat": "task"
+    },
+    {
+      "hash": "bec58702",
+      "text": "Der Helm schützt deinen Kopf wie eine harte Schale.",
+      "cat": "fact"
+    },
+    {
+      "hash": "563f4b5b",
+      "text": "Brrr, ist das kalt! Der Winter und die Feste sind da.",
+      "cat": "intro"
+    },
+    {
+      "hash": "c0220027",
+      "text": "Was ziehst du im Winter an? Ziehen oder antippen, dann den richtigen Korb wählen.",
+      "cat": "task"
+    },
+    {
+      "hash": "b39f5b54",
+      "text": "Wie viele Kerzen brennen am ersten Advent?",
+      "cat": "task"
+    },
+    {
+      "hash": "ea2ac373",
+      "text": "Jeden Sonntag im Advent zünden wir eine Kerze mehr an. Am vierten Advent brennen alle vier.",
+      "cat": "fact"
+    },
+    {
+      "hash": "c158571b",
+      "text": "Welcher Monat kommt nach dem Dezember?",
+      "cat": "task"
+    },
+    {
+      "hash": "955bf231",
+      "text": "Mit dem Januar beginnt das neue Jahr. Ein Jahr hat zwölf Monate.",
+      "cat": "fact"
+    },
+    {
+      "hash": "38632e65",
+      "text": "Was fällt im Winter vom Himmel?",
+      "cat": "task"
+    },
+    {
+      "hash": "f56bdcc7",
+      "text": "Jede Schneeflocke sieht anders aus. Keine gleicht der anderen!",
+      "cat": "fact"
+    },
+    {
+      "hash": "30606911",
+      "text": "Was machen die Tiere, wenn es schneit? Finde es heraus!",
+      "cat": "intro"
+    },
+    {
+      "hash": "c8188ca5",
+      "text": "Was macht das Tier im Winter? Ziehen oder antippen, dann den richtigen Korb wählen.",
+      "cat": "task"
+    },
+    {
+      "hash": "30b510af",
+      "text": "Bär und Igel verschlafen den Winter. Fuchs und Reh suchen auch im Schnee Futter.",
+      "cat": "fact"
+    },
+    {
+      "hash": "1f28913d",
+      "text": "Schau auf das Bild. Welches Wetter ist das?",
+      "cat": "task"
+    },
+    {
+      "hash": "21cb821f",
+      "text": "Was brauchst du bei Regen?",
+      "cat": "task"
+    },
+    {
+      "hash": "8044991c",
+      "text": "Wohin fliegen viele Vögel im Winter?",
+      "cat": "task"
+    },
+    {
+      "hash": "e2563ba2",
+      "text": "Störche und Schwalben fliegen viele tausend Kilometer bis nach Afrika.",
+      "cat": "fact"
+    },
+    {
+      "hash": "43d1a928",
+      "text": "Gesundes Essen macht dich stark und fit!",
+      "cat": "intro"
+    },
+    {
+      "hash": "29c70831",
+      "text": "Was ist gesund? Ziehen oder antippen, dann den richtigen Korb wählen.",
+      "cat": "task"
+    },
+    {
+      "hash": "3d491635",
+      "text": "Naschen ist ab und zu okay. Obst und Gemüse machen dich aber stark!",
+      "cat": "fact"
+    },
+    {
+      "hash": "76ac8247",
+      "text": "Wie oft putzt du am Tag deine Zähne?",
+      "cat": "task"
+    },
+    {
+      "hash": "07719fdb",
+      "text": "Morgens und abends putzen, dann bleiben deine Zähne gesund und stark.",
+      "cat": "fact"
+    },
+    {
+      "hash": "91e7b292",
+      "text": "Was ist gut für die Zähne?",
+      "cat": "task"
+    },
+    {
+      "hash": "d0e8012d",
+      "text": "Was solltest du viel trinken?",
+      "cat": "task"
+    },
+    {
+      "hash": "a304b64b",
+      "text": "Dein Körper braucht viel Wasser, genau wie eine Blume.",
+      "cat": "fact"
+    },
+    {
+      "hash": "d617b8c0",
+      "text": "Der Frühling ist da! Alles blüht und wächst.",
+      "cat": "intro"
+    },
+    {
+      "hash": "841d6a64",
+      "text": "Zuerst der Samen, dann der kleine Keimling. Was kommt als Nächstes?",
+      "cat": "task"
+    },
+    {
+      "hash": "feec9c29",
+      "text": "Erst Samen, dann Keimling, dann Pflanze, dann Blüte!",
+      "cat": "fact"
+    },
+    {
+      "hash": "f4c40a1c",
+      "text": "Was braucht eine Pflanze zum Wachsen?",
+      "cat": "task"
+    },
+    {
+      "hash": "272b7068",
+      "text": "Aus einem winzigen Samenkorn kann ein riesiger Baum werden!",
+      "cat": "fact"
+    },
+    {
+      "hash": "6e2e6d95",
+      "text": "Was gehört zur Pflanze? Ziehen oder antippen, dann den richtigen Korb wählen.",
+      "cat": "task"
+    },
+    {
+      "hash": "e838dc79",
+      "text": "Welche Blume blüht im Frühling?",
+      "cat": "task"
+    },
+    {
+      "hash": "4e07a888",
+      "text": "Ein Pilz ist gar keine Blume und der Kaktus wächst in der Wüste.",
+      "cat": "fact"
+    },
+    {
+      "hash": "3ee27595",
+      "text": "Auf dem Bauernhof sind die Tierkinder los!",
+      "cat": "intro"
+    },
+    {
+      "hash": "c888c2e1",
+      "text": "Finde Tier-Mama und Tier-Kind!",
+      "cat": "task"
+    },
+    {
+      "hash": "d2b9638c",
+      "text": "Welches Tier gibt uns Milch?",
+      "cat": "task"
+    },
+    {
+      "hash": "876a66c0",
+      "text": "Eine Kuh gibt jeden Tag ungefähr 25 Liter Milch. Das sind viele Gläser!",
+      "cat": "fact"
+    },
+    {
+      "hash": "9bdd19ca",
+      "text": "Welches Tier legt Eier?",
+      "cat": "task"
+    },
+    {
+      "hash": "99a0fad0",
+      "text": "Das Küken wächst 21 Tage im Ei, dann pickt es sich heraus.",
+      "cat": "fact"
+    },
+    {
+      "hash": "8dd9729a",
+      "text": "Wie heißt das Kind vom Schaf?",
+      "cat": "task"
+    },
+    {
+      "hash": "0575f504",
+      "text": "Das Kind vom Schaf heißt Lamm, das Kind der Kuh heißt Kalb.",
+      "cat": "fact"
+    },
+    {
+      "hash": "1fb197b6",
+      "text": "Wie macht die Kuh?",
+      "cat": "task"
+    },
+    {
+      "hash": "657460d5",
+      "text": "Summ, summ! Auf der Wiese ist richtig was los.",
+      "cat": "intro"
+    },
+    {
+      "hash": "acae719b",
+      "text": "Welches Tier macht Honig?",
+      "cat": "task"
+    },
+    {
+      "hash": "0f945363",
+      "text": "Für ein Glas Honig besuchen Bienen viele tausend Blüten.",
+      "cat": "fact"
+    },
+    {
+      "hash": "9cb63763",
+      "text": "Wie viele Beine hat ein Käfer?",
+      "cat": "task"
+    },
+    {
+      "hash": "667f56e0",
+      "text": "Alle Insekten haben sechs Beine. Spinnen haben acht, sie sind keine Insekten.",
+      "cat": "fact"
+    },
+    {
+      "hash": "49d34097",
+      "text": "Zuerst das Ei, dann kriecht die Raupe heraus. Was kommt danach?",
+      "cat": "task"
+    },
+    {
+      "hash": "e3d940eb",
+      "text": "Aus der Raupe wird eine Puppe, und daraus schlüpft der Schmetterling.",
+      "cat": "fact"
+    },
+    {
+      "hash": "a54ad17b",
+      "text": "Wann passiert das? Ziehen oder antippen, dann den richtigen Korb wählen.",
+      "cat": "task"
+    },
+    {
+      "hash": "5da09c04",
+      "text": "Wir passen gut auf unsere Erde auf. Du auch?",
+      "cat": "intro"
+    },
+    {
+      "hash": "a99ee4d8",
+      "text": "Wohin kommt der Müll? Ziehen oder antippen, dann den richtigen Korb wählen.",
+      "cat": "task"
+    },
+    {
+      "hash": "0c5e26b6",
+      "text": "Aus altem Papier wird neues Papier. Das nennt man Recycling.",
+      "cat": "fact"
+    },
+    {
+      "hash": "6b360f8f",
+      "text": "Was schützt dich in der Sonne?",
+      "cat": "task"
+    },
+    {
+      "hash": "d3488f8f",
+      "text": "Sonnencreme, Hut und Schatten schützen deine Haut.",
+      "cat": "fact"
+    },
+    {
+      "hash": "4042cc1b",
+      "text": "Warum sollen wir Wasser sparen?",
+      "cat": "task"
+    },
+    {
+      "hash": "4d93c94b",
+      "text": "Sauberes Trinkwasser ist wertvoll. Nicht überall auf der Welt gibt es genug davon.",
+      "cat": "fact"
+    },
+    {
+      "hash": "891f5fd0",
+      "text": "Wo darf Müll nicht hin?",
+      "cat": "task"
+    },
+    {
+      "hash": "eb01c5e6",
+      "text": "Müll in der Natur schadet den Tieren. Eine Plastiktüte bleibt viele Jahre liegen!",
+      "cat": "fact"
+    }
+  ]
+}

@@ -97,7 +97,7 @@ const Games = (() => {
     const q = `${a.a} ${a.op} ${a.b} = ?`;
     renderChoice(stage, {
       title: q, sub: 'Zähl die blauen Felder!', hero: null, heroHtml: frame,
-      say: `Wie viel ist ${a.a} ${a.op === '+' ? 'plus' : 'minus'} ${a.b}? Zähl die Felder, wenn du magst.`,
+      say: Speakables.forActivity(a),
       options: [...opts].sort((x, y) => x - y).map(v => ({ label: String(v), correct: v === res })),
       cols: 4
     }, ctx);
@@ -108,7 +108,7 @@ const Games = (() => {
     const frage = a.q || 'Welcher Buchstabe ist am Anfang?';
     renderChoice(stage, {
       title: frage,
-      sub: a.word, hero: a.emoji, say: `${frage} ${a.word}.`,
+      sub: a.word, hero: a.emoji, say: Speakables.forActivity(a),
       options: a.letters.map(L => ({ label: L, correct: L === a.answer })),
       cols: a.letters.length
     }, ctx);
@@ -122,12 +122,8 @@ const Games = (() => {
     const q = E('span', null, '❓'); q.style.opacity = '.55'; row.appendChild(q);
     const isText = s => /^[A-Za-zÄÖÜäöüß0-9]+$/.test(s); // Text/Zahl vs. Emoji
     const frage = a.q || 'Was kommt als Nächstes?';
-    // Lesbare Folgen (Zahlen, Wörter) werden mit vorgelesen – sonst hört
-    // ein Nicht-Leser die Reihe nie. Emoji-Folgen brauchen ein eigenes a.say.
-    const spoken = a.say || (a.seq.every(isText) && a.seq.length > 1
-      ? `${a.seq.join(', ')}. ${frage}` : frage);
     renderChoice(stage, {
-      title: frage, say: spoken,
+      title: frage, say: Speakables.forActivity(a), // liest lesbare Folgen mit vor
       heroHtml: row,
       options: a.options.map(o => ({ label: isText(o) ? o : null, emoji: isText(o) ? null : o, correct: o === a.answer })),
       cols: a.options.length
@@ -176,7 +172,7 @@ const Games = (() => {
     stage.innerHTML = '';
     const frage = a.q || 'Sortiere richtig ein!';
     stage.appendChild(E('div', 'q-title', frage));
-    stage.appendChild(speakBtn(`${frage} Ziehen oder antippen, dann den richtigen Korb wählen.`, ctx));
+    stage.appendChild(speakBtn(Speakables.forActivity(a), ctx));
     let firstTry = true, placed = 0;
     const total = a.items.length;
     let selected = null; // für Tipp-Bedienung (Tablet)
@@ -226,9 +222,9 @@ const Games = (() => {
   /* --- Buchstaben / Zahlen nachspuren (Canvas) --- */
   function trace(stage, a, ctx) {
     stage.innerHTML = '';
-    const frage = a.q || `Spure den Buchstaben nach: ${a.char}`;
+    const frage = Speakables.traceTitle(a);
     stage.appendChild(E('div', 'q-title', frage));
-    stage.appendChild(speakBtn(`${frage}. Das klingt so: ${a.sayText || a.char}`, ctx));
+    stage.appendChild(speakBtn(Speakables.forActivity(a), ctx));
 
     const size = Math.min(360, Math.floor(innerWidth * 0.8));
     const wrap = E('div', 'trace-wrap'); wrap.style.width = size + 'px'; wrap.style.height = size + 'px';
@@ -253,7 +249,7 @@ const Games = (() => {
     const clear = E('button', 'btn-ghost', '🧽 Nochmal');
     clear.onclick = () => { c.clearRect(0,0,size,size); painted = 0; };
     const done = E('button', 'btn-primary', '✅ Fertig!');
-    done.onclick = () => { if (painted < 8) { ctx.speak('Spure den Buchstaben erst nach!'); return; } Sound.correct(); ctx.solved(true); };
+    done.onclick = () => { if (painted < 8) { ctx.speak(Speakables.TRACE_FIRST); return; } Sound.correct(); ctx.solved(true); };
     tools.appendChild(clear); tools.appendChild(done);
     stage.appendChild(tools);
   }

@@ -141,10 +141,8 @@
 
     $('#progressFill').style.width = '100%';
     Sound.win(); Confetti.burst(160);
-    const tip = stars === 3 ? 'Alles beim ersten Versuch richtig. Fantastisch!'
-              : stars === 2 ? 'Fast perfekt! Spiel nochmal und hol dir den dritten Stern.'
-              : 'Übung macht den Meister. Spiel gleich nochmal!';
-    Speech.say(`Geschafft! Du hast ${stars} ${stars===1?'Stern':'Sterne'} gesammelt. ${tip}`);
+    const tip = Speakables.finishTip(stars);
+    Speech.say(Speakables.finish(stars));
 
     const done = MODULES.filter(x => bestStars(x.id) > 0).length;
     stage.innerHTML = '';
@@ -165,11 +163,8 @@
   }
 
   /* ---------- Vorlesen der Begrüßung ---------- */
-  $('#speakWelcome').onclick = () => {
-    unlock();
-    Speech.say('Hallo! Ich bin Fuchsi der Fuchs. Such dir ein Spiel aus und sammle ganz viele Sterne!');
-  };
-  $('#mascot').onclick = () => { unlock(); Speech.say('Wuff... ähm, ich meine: Los geht\'s!'); };
+  $('#speakWelcome').onclick = () => { unlock(); Speech.say(Speakables.WELCOME); };
+  $('#mascot').onclick = () => { unlock(); Speech.say(Speakables.MASCOT); };
 
   /* ---------- Zurücksetzen ---------- */
   $('#resetProgress').onclick = () => {
