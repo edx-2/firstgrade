@@ -459,3 +459,296 @@ const MODULES = [
       fact:'Müll in der Natur schadet den Tieren. Eine Plastiktüte bleibt viele Jahre liegen!' }
   ]}
 ];
+
+/* ------------------------------------------------------------------ */
+/*  Ü B U N G S B A N K E N                                            */
+/*  Zusätzlicher Aufgabenvorrat je Modul (aus js/pools.js erzeugt).    */
+/*  Pro Runde wird daraus eine frische Auswahl gezogen -> jede Runde   */
+/*  ist anders, das Kind kann endlos üben.                             */
+/* ------------------------------------------------------------------ */
+const P = Pools;
+const DRILLS = {
+  /* --- Deutsch --- */
+  de1: [...P.anlaute(['A','M','L','O','S']),
+        ...['O','S','L'].map(c => ({ type:'trace', char:c, sayText:c.toLowerCase() }))],
+  de2: [...P.anlaute(['E','I','N','R','T']),
+        ...P.silben(['Sonne','Banane','Blume','Apfel','Elefant','Tomate','Maus','Zitrone',
+                     'Katze','Baum','Giraffe','Nase','Hund','Melone','Rakete','Ball'])],
+  de3: P.lesen(['Oma','Maus','Sonne','Rose','Mond','Ball','Haus','Nase','Hut','Igel',
+                'Ente','Nuss','Ring','Tür','Zug','Ohr','Hand','Baum','Fisch','Katze']),
+  /* Reime: falsche Optionen dürfen sich NICHT auch reimen,
+     und alle Reimwörter müssen Erstklässlern bekannt sein. */
+  de4: P.quiz([
+    ['Was reimt sich auf MAUS?','Was reimt sich auf Maus?',['🏠','Haus'],['🌳','Baum'],['🐟','Fisch']],
+    ['Was reimt sich auf BAUM?','Was reimt sich auf Baum?',['💭','Traum'],['🐭','Maus'],['🌸','Blume']],
+    ['Was reimt sich auf ROSE?','Was reimt sich auf Rose?',['👖','Hose'],['🌹','Blume'],['🐕','Hund']],
+    ['Was reimt sich auf HUT?','Was reimt sich auf Hut?',['🩸','Blut'],['🎩','Kappe'],['🐈','Katze']],
+    ['Was reimt sich auf BALL?','Was reimt sich auf Ball?',['🏚️','Stall'],['⚽','Tor'],['🌙','Mond']],
+    ['Was reimt sich auf SONNE?','Was reimt sich auf Sonne?',['🗑️','Tonne'],['⭐','Stern'],['🌧️','Regen']],
+    ['Was reimt sich auf FISCH?','Was reimt sich auf Fisch?',['🪑','Tisch'],['🌊','Wasser'],['🐦','Vogel']],
+    ['Was reimt sich auf NASE?','Was reimt sich auf Nase?',['🏺','Vase'],['👄','Mund'],['👁️','Auge']],
+    ['Was reimt sich auf KATZE?','Was reimt sich auf Katze?',['🐾','Tatze'],['🐁','Maus'],['🥛','Milch']],
+    ['Was reimt sich auf HAND?','Was reimt sich auf Hand?',['🏖️','Sand'],['🖐️','Finger'],['🦶','Fuß']],
+    ['Was reimt sich auf BEIN?','Was reimt sich auf Bein?',['🪨','Stein'],['🦶','Fuß'],['💪','Arm']],
+    ['Was reimt sich auf BUCH?','Was reimt sich auf Buch?',['🧻','Tuch'],['📖','Seite'],['✏️','Stift']]
+  ]),
+  de5: [...P.grossKlein(['AMSR','EOLT','BDFG','HIKN','PUWZ','MNOP']),
+        ...['A','E','M','S','R','L','T','O'].map(c => ({ type:'trace', char:c, sayText:c.toLowerCase() })),
+        ...P.quiz([
+          ['Welcher ist der große Buchstabe zu "b"?','Welcher ist der große Buchstabe zu b?',[null,'B'],[null,'D'],[null,'P']],
+          ['Welcher ist der große Buchstabe zu "d"?','Welcher ist der große Buchstabe zu d?',[null,'D'],[null,'B'],[null,'P']],
+          ['Welcher ist der kleine Buchstabe zu "R"?','Welcher ist der kleine Buchstabe zu R?',[null,'r'],[null,'n'],[null,'m']],
+          ['Welcher ist der kleine Buchstabe zu "E"?','Welcher ist der kleine Buchstabe zu E?',[null,'e'],[null,'a'],[null,'o']]
+        ])],
+  de6: P.quiz([
+    ['Der Hund bellt laut.','Lies: Der Hund bellt laut.',['🐕',''],['🐈',''],['🐦','']],
+    ['Die Blume ist gelb.','Lies: Die Blume ist gelb.',['🌻',''],['🌹',''],['🌷','']],
+    ['Das Auto fährt schnell.','Lies: Das Auto fährt schnell.',['🚗',''],['🚲',''],['⛵','']],
+    ['Die Maus frisst Käse.','Lies: Die Maus frisst Käse.',['🐭🧀',''],['🐈🥛',''],['🐕🦴','']],
+    ['Der Vogel fliegt hoch.','Lies: Der Vogel fliegt hoch.',['🐦',''],['🐟',''],['🐌','']],
+    ['Es regnet heute.','Lies: Es regnet heute.',['🌧️',''],['☀️',''],['❄️','']],
+    ['Der Baum ist groß.','Lies: Der Baum ist groß.',['🌳',''],['🌱',''],['🍄','']],
+    ['Ich trinke Milch.','Lies: Ich trinke Milch.',['🥛',''],['🧃',''],['☕','']],
+    ['Die Katze schläft.','Lies: Die Katze schläft.',['😴',''],['🏃',''],['🍽️','']],
+    ['Der Fisch schwimmt im Wasser.','Lies: Der Fisch schwimmt im Wasser.',['🐟',''],['🐦',''],['🐛','']]
+  ]),
+  de7: [...P.anlaute(['Sch']),
+        ...P.quiz([
+          ['Welches Wort hat "ei"?','In welchem Wort hörst du ei?',['🥚','Ei'],['🌳','Baum'],['🐟','Fisch']],
+          ['Welches Wort hat "ei"?','Und hier: In welchem Wort hörst du ei?',['🍦','Eis'],['🐭','Maus'],['🌙','Mond']],
+          ['Welches Wort hat "au"?','In welchem Wort hörst du au?',['🏠','Haus'],['🌙','Mond'],['🐸','Frosch']],
+          ['Welches Wort hat "au"?','Und hier: In welchem Wort hörst du au?',['🌳','Baum'],['🐟','Fisch'],['⭐','Stern']],
+          ['Welches Wort hat "au"?','Noch einmal: In welchem Wort hörst du au?',['🐭','Maus'],['🌹','Rose'],['🍎','Apfel']],
+          ['Welches Wort beginnt mit "St"?','Welches Wort beginnt mit St?',['⭐','Stern'],['🐑','Schaf'],['🌞','Sonne']],
+          ['Welches Wort beginnt mit "Sp"?','Welches Wort beginnt mit Sp?',['🕷️','Spinne'],['🐑','Schaf'],['⭐','Stern']],
+          ['Welches Wort hat "eu"?','In welchem Wort hörst du eu?',['🔥','Feuer'],['🏠','Haus'],['🥚','Ei']]
+        ])],
+  de8: P.fehlenderLaut([['Sonne',1],['Ball',1],['Fisch',1],['Hund',1],['Baum',1],['Maus',1],
+                        ['Mond',1],['Rose',1],['Nase',1],['Hase',1],['Katze',1],['Tiger',1],
+                        ['Nuss',1],['Ring',1],['Zug',1],['Hut',1],['Ohr',0],['Apfel',0],
+                        ['Igel',0],['Ente',0],['Oma',0],['Uhr',0]]),
+  de9: [...P.artikel([['Hund','der'],['Blume','die'],['Haus','das'],['Sonne','die'],['Ball','der'],
+                      ['Auto','das'],['Maus','die'],['Baum','der'],['Buch','das'],['Katze','die'],
+                      ['Mond','der'],['Fisch','der'],['Rose','die'],['Brot','das'],['Nase','die'],
+                      ['Tiger','der'],['Boot','das'],['Uhr','die']]),
+        ...P.quiz([
+          ['Welches Wort ist ein Nomen?','Welches Wort ist ein Nomen?',[null,'Haus'],[null,'lachen'],[null,'bunt']],
+          ['Welches Wort ist ein Nomen?','Welches Wort ist ein Nomen?',[null,'Vogel'],[null,'fliegen'],[null,'hoch']],
+          ['Welches Wort ist ein Nomen?','Welches Wort ist ein Nomen?',[null,'Schule'],[null,'lernen'],[null,'klug']]
+        ])],
+  de10: P.quiz([
+    ['Welches Wort schreibt man GROSS?','Welches Wort schreibt man groß?',[null,'Hund'],[null,'rennt'],[null,'schnell']],
+    ['Welches Wort schreibt man GROSS?','Welches Wort schreibt man groß?',[null,'Sonne'],[null,'scheint'],[null,'warm']],
+    ['Welches Wort schreibt man GROSS?','Welches Wort schreibt man groß?',[null,'Tisch'],[null,'steht'],[null,'braun']],
+    ['Welches Wort schreibt man GROSS?','Welches Wort schreibt man groß?',[null,'Kind'],[null,'spielt'],[null,'froh']],
+    ['Max hat Durst. Was braucht er?','Max hat Durst. Was braucht er?',['💧','Wasser'],['🍞','Brot'],['📚','Buch']],
+    ['Lisa ist müde. Was macht sie?','Lisa ist müde. Was macht sie?',['😴','schlafen'],['🏃','rennen'],['🍰','backen']],
+    ['Es regnet. Was nimmt Paul mit?','Es regnet. Was nimmt Paul mit?',['☂️','Schirm'],['🕶️','Brille'],['🩴','Sandalen']],
+    ['Oma hat Geburtstag. Was schenkt Mia?','Oma hat Geburtstag. Was schenkt Mia?',['🎁','Geschenk'],['🗑️','Müll'],['🧦','alte Socke']]
+  ]),
+
+  /* --- Mathematik --- */
+  ma1: [...P.zaehlen(1, 6), ...P.zaehlen(2, 6),
+        ...P.quiz([
+          ['Wo sind MEHR?','Wo sind mehr Punkte?',['🔵🔵🔵🔵',''],['🔵🔵','']],
+          ['Wo sind WENIGER?','Wo sind weniger Sterne?',['⭐',''],['⭐⭐⭐','']],
+          ['Wo sind MEHR?','Wo sind mehr Herzen?',['❤️❤️❤️❤️❤️',''],['❤️❤️❤️','']],
+          ['Wo sind WENIGER?','Wo sind weniger Blumen?',['🌸🌸',''],['🌸🌸🌸🌸','']]
+        ])],
+  ma2: [...P.zaehlen(5, 10), ...P.zahlErkennen(1, 10), ...P.folgen(1, 10, 1),
+        ...'0123456789'.split('').map(c => ({ type:'trace', char:c, sayText:P.ZAHLWORT[+c] }))],
+  ma3: [...P.plus(10), ...P.sachaufgaben([
+        ['Tim hat 3 Murmeln und findet 4 dazu. Wie viele hat er?','Tim hat drei Murmeln und findet vier dazu. Wie viele hat er?',7,'🔮'],
+        ['Im Korb sind 5 Eier. Oma legt 3 dazu. Wie viele sind es?','Im Korb sind fünf Eier. Oma legt drei dazu. Wie viele sind es?',8,'🥚'],
+        ['4 Vögel sitzen im Baum. 2 kommen dazu. Wie viele sind es?','Vier Vögel sitzen im Baum. Zwei kommen dazu. Wie viele sind es?',6,'🐦'],
+        ['Du hast 6 Sticker und bekommst 3. Wie viele hast du?','Du hast sechs Sticker und bekommst drei dazu. Wie viele hast du?',9,'⭐']])],
+  ma4: [...P.minus(10), ...P.sachaufgaben([
+        ['9 Luftballons, 4 platzen. Wie viele bleiben?','Neun Luftballons. Vier platzen. Wie viele bleiben?',5,'🎈'],
+        ['Auf dem Teller sind 7 Kekse. Du isst 2. Wie viele bleiben?','Auf dem Teller sind sieben Kekse. Du isst zwei. Wie viele bleiben?',5,'🍪'],
+        ['10 Enten schwimmen. 3 fliegen weg. Wie viele bleiben?','Zehn Enten schwimmen. Drei fliegen weg. Wie viele bleiben?',7,'🦆'],
+        ['Du hast 8 Bonbons und teilst 5 aus. Wie viele bleiben?','Du hast acht Bonbons und teilst fünf aus. Wie viele bleiben?',3,'🍬']])],
+  ma5: P.quiz([
+    ['Welche Form ist ein Quadrat?','Welche Form ist ein Quadrat?',['🟦',''],['🔺',''],['🔵','']],
+    ['Welche Form hat 3 Ecken?','Welche Form hat drei Ecken?',['🔺',''],['🟦',''],['🔵','']],
+    ['Welche Form hat keine Ecke?','Welche Form hat keine einzige Ecke?',['🔵',''],['🔺',''],['⬛','']],
+    ['Welche Form hat 4 Ecken?','Welche Form hat vier Ecken?',['⬛',''],['🔵',''],['🔺','']],
+    ['Was ist ein Würfel?','Welcher Körper ist ein Würfel?',['🎲',''],['⚽',''],['🥫','']],
+    ['Was ist eine Kugel?','Welcher Körper ist eine Kugel?',['⚽',''],['🎲',''],['📦','']],
+    ['Welches Bild ist symmetrisch?','Welches Bild ist spiegelgleich?',['🦋',''],['🌙',''],['🍌','']],
+    ['Welches Bild ist symmetrisch?','Welches Bild ist spiegelgleich?',['❤️',''],['👟',''],['🥄','']]
+  ]),
+  ma6: [...P.zaehlen(11, 20), ...P.zahlErkennen(11, 20), ...P.folgen(10, 20, 1),
+        ...P.folgen(2, 20, 2), ...P.folgen(5, 20, 5),
+        ...P.vergleich([[18,15],[12,19],[20,17],[11,14],[16,13],[9,12],[20,2],[15,17]])],
+  ma7: [...P.plusUeber10(), ...P.minusUeber10(),
+        ...P.quiz([
+          ['Verdopple die 5!','Verdopple die Fünf! Was ist 5 plus 5?',[null,'10'],[null,'8'],[null,'12']],
+          ['Verdopple die 6!','Verdopple die Sechs! Was ist 6 plus 6?',[null,'12'],[null,'10'],[null,'14']],
+          ['Verdopple die 8!','Verdopple die Acht! Was ist 8 plus 8?',[null,'16'],[null,'14'],[null,'18']],
+          ['Verdopple die 9!','Verdopple die Neun! Was ist 9 plus 9?',[null,'18'],[null,'16'],[null,'20']],
+          ['Tauschaufgabe: 3 + 9 = 9 + ?','Drei plus neun ist dasselbe wie neun plus wie viel?',[null,'3'],[null,'9'],[null,'12']],
+          ['Tauschaufgabe: 7 + 4 = 4 + ?','Sieben plus vier ist dasselbe wie vier plus wie viel?',[null,'7'],[null,'4'],[null,'11']],
+          ['Welche Zahl fehlt?  8 + ? = 10','Acht plus wie viel ergibt zehn?',[null,'2'],[null,'3'],[null,'1']],
+          ['Welche Zahl fehlt?  6 + ? = 10','Sechs plus wie viel ergibt zehn?',[null,'4'],[null,'3'],[null,'5']],
+          ['Welche Zahl fehlt?  3 + ? = 10','Drei plus wie viel ergibt zehn?',[null,'7'],[null,'6'],[null,'8']]
+        ])],
+  ma8: [...P.geld(2, 10),
+        ...P.sachaufgaben([
+          ['Das Brot kostet 3 €. Du zahlst 5 €. Wie viel zurück?','Das Brot kostet drei Euro. Du zahlst mit fünf Euro. Wie viel bekommst du zurück?',2,'🍞'],
+          ['Der Apfel kostet 1 €. Du zahlst 5 €. Wie viel zurück?','Der Apfel kostet einen Euro. Du zahlst mit fünf Euro. Wie viel bekommst du zurück?',4,'🍎'],
+          ['Du hast 4 € und bekommst 5 € dazu. Wie viel?','Du hast vier Euro und bekommst fünf Euro dazu. Wie viel hast du?',9,'💶'],
+          ['Das Eis kostet 3 €, der Saft 2 €. Wie viel zusammen?','Das Eis kostet drei Euro, der Saft zwei Euro. Wie viel kostet beides zusammen?',5,'🍦']]),
+        ...P.quiz([
+          ['Was kostet mehr?','Was kostet wohl mehr?',['🚗','Auto'],['🍎','Apfel']],
+          ['Was kostet weniger?','Was kostet wohl weniger?',['✏️','Stift'],['🏠','Haus']],
+          ['Was kostet mehr?','Was kostet wohl mehr?',['📱','Handy'],['🍬','Bonbon']]
+        ])],
+  ma9: [...P.uhrzeiten([1,2,3,4,5,6,7,8,9,10,11,12]),
+        ...P.quiz([
+          ['Welcher Tag kommt nach Dienstag?','Welcher Wochentag kommt nach Dienstag?',[null,'Mittwoch'],[null,'Montag'],[null,'Freitag']],
+          ['Welcher Tag kommt nach Freitag?','Welcher Wochentag kommt nach Freitag?',[null,'Samstag'],[null,'Donnerstag'],[null,'Montag']],
+          ['Welcher Tag kommt vor Montag?','Welcher Wochentag kommt vor Montag?',[null,'Sonntag'],[null,'Dienstag'],[null,'Samstag']],
+          ['Wie viele Tage hat eine Woche?','Wie viele Tage hat eine Woche?',[null,'7'],[null,'5'],[null,'10']],
+          ['Wie viele Monate hat ein Jahr?','Wie viele Monate hat ein Jahr?',[null,'12'],[null,'7'],[null,'10']],
+          ['Wie viele Stunden hat ein Tag?','Wie viele Stunden hat ein Tag?',[null,'24'],[null,'12'],[null,'60']],
+          ['Wann frühstückst du?','Wann frühstückst du?',['🌅','morgens'],['🌙','nachts'],['🌆','abends']],
+          ['Wann gehst du ins Bett?','Wann gehst du ins Bett?',['🌙','abends'],['🌅','morgens'],['☀️','mittags']]
+        ])],
+  ma10: P.quiz([
+    ['Was ist länger?','Was ist länger?',['🚌','Bus'],['🚲','Fahrrad']],
+    ['Was ist kürzer?','Was ist kürzer?',['✏️','Stift'],['🪜','Leiter']],
+    ['Was ist schwerer?','Was ist schwerer?',['🚗','Auto'],['🪶','Feder']],
+    ['Was ist leichter?','Was ist leichter?',['🎈','Luftballon'],['🪨','Stein']],
+    ['Was ist größer?','Was ist größer?',['🐘','Elefant'],['🐈','Katze']],
+    ['Was ist kleiner?','Was ist kleiner?',['🐜','Ameise'],['🐕','Hund']],
+    ['Womit misst du eine Länge?','Womit misst du, wie lang etwas ist?',['📏','Lineal'],['🕐','Uhr'],['⚖️','Waage']],
+    ['Womit misst du die Zeit?','Womit misst du die Zeit?',['🕐','Uhr'],['📏','Lineal'],['🌡️','Thermometer']],
+    ['Womit misst du das Gewicht?','Womit misst du, wie schwer etwas ist?',['⚖️','Waage'],['📏','Lineal'],['🕐','Uhr']]
+  ]),
+
+  /* --- Sachkunde (HSU) --- */
+  hsu1: P.quiz([
+    ['Womit SIEHST du?','Womit siehst du?',['👁️','Auge'],['👂','Ohr'],['👃','Nase']],
+    ['Womit SCHMECKST du?','Womit schmeckst du?',['👅','Zunge'],['✋','Hand'],['👂','Ohr']],
+    ['Womit FÜHLST du?','Womit fühlst du?',['✋','Hand'],['👁️','Auge'],['👃','Nase']],
+    ['Was gehört in deinen Schulranzen?','Was gehört in deinen Schulranzen?',['📒','Heft'],['🍳','Pfanne'],['🛏️','Kissen']],
+    ['Was macht man in der Pause?','Was macht man in der Pause?',['⚽','spielen'],['😴','schlafen'],['🛁','baden']],
+    ['Ein Kind ist traurig. Was tust du?','Ein Kind ist traurig. Was tust du?',['🤗','trösten'],['😂','auslachen'],['🙈','weggehen']],
+    ['Wie grüßt man am Morgen?','Wie grüßt man am Morgen?',[null,'Guten Morgen'],[null,'Gute Nacht'],[null,'Tschüss']],
+    ['Was sagst du, wenn du etwas möchtest?','Was sagst du, wenn du etwas möchtest?',[null,'Bitte'],[null,'Sofort!'],[null,'Nein!']]
+  ]),
+  hsu2: P.quiz([
+    ['Welche Farbe haben Blätter im Herbst?','Welche Farbe haben die Blätter im Herbst?',['🍁','bunt'],['💙','blau'],['🖤','schwarz']],
+    ['Was wächst im Herbst am Baum?','Was wächst im Herbst am Baum?',['🍎','Äpfel'],['🍦','Eis'],['❄️','Schnee']],
+    ['Welches Tier fliegt in den Süden?','Welches Tier fliegt im Herbst in den Süden?',['🦢','Storch'],['🐿️','Eichhörnchen'],['🦔','Igel']],
+    ['Was braucht man bei Wind?','Was braucht man bei viel Wind?',['🪁','Drachen'],['🍦','Eis'],['🩱','Badehose']],
+    ['Welche Frucht ist eine Herbstfrucht?','Welche Frucht reift im Herbst?',['🌰','Kastanie'],['🍉','Melone'],['🍍','Ananas']],
+    ['Was macht der Bauer im Herbst?','Was macht der Bauer im Herbst?',['🚜','ernten'],['🎿','Ski fahren'],['🏊','schwimmen']],
+    ['Wie viele Jahreszeiten gibt es?','Wie viele Jahreszeiten gibt es?',[null,'4'],[null,'2'],[null,'12']],
+    ['Welche Jahreszeit kommt vor dem Herbst?','Welche Jahreszeit kommt vor dem Herbst?',['☀️','Sommer'],['❄️','Winter'],['🌸','Frühling']]
+  ]),
+  hsu3: P.quiz([
+    ['Die Ampel ist GELB. Was bedeutet das?','Die Ampel ist gelb. Was bedeutet das?',['⚠️','gleich Rot'],['🏃','schnell rennen'],['😴','schlafen']],
+    ['Wo gehst du auf dem Weg zur Schule?','Wo gehst du auf dem Weg zur Schule?',['🚶','auf dem Gehweg'],['🛣️','auf der Straße'],['🅿️','auf dem Parkplatz']],
+    ['Was machst du an einer Bushaltestelle?','Was machst du an der Bushaltestelle?',['🧍','warten'],['🏃','rennen'],['💃','tanzen']],
+    ['Was bedeutet ein rotes Stoppschild?','Was bedeutet ein rotes Stoppschild?',['🛑','anhalten'],['🏃','weitergehen'],['🔄','umdrehen']],
+    ['Was trägst du bei Dunkelheit?','Was trägst du am besten, wenn es dunkel ist?',['🦺','helle Kleidung'],['🖤','dunkle Kleidung'],['🕶️','Sonnenbrille']],
+    ['Wo sitzt du sicher im Auto?','Wo sitzt du sicher im Auto?',['💺','im Kindersitz'],['🦵','auf dem Schoß'],['🧳','im Kofferraum']],
+    ['Darfst du zwischen Autos auf die Straße laufen?','Darfst du zwischen parkenden Autos auf die Straße laufen?',['🚫','Nein'],['✅','Ja'],['🤷','Manchmal']],
+    ['Was macht ein Fahrradklingel?','Wofür ist die Fahrradklingel da?',['🔔','warnen'],['🎵','Musik machen'],['🎨','schmücken']]
+  ]),
+  hsu4: P.quiz([
+    ['Was gehört zum Winter?','Was gehört zum Winter?',['⛄','Schneemann'],['🏖️','Strand'],['🌻','Sonnenblume']],
+    ['Was ziehst du bei Kälte an?','Was ziehst du an, wenn es kalt ist?',['🧥','Jacke'],['🩱','Badeanzug'],['🩳','Shorts']],
+    ['Wie viele Kerzen am 4. Advent?','Wie viele Kerzen brennen am vierten Advent?',[null,'4'],[null,'1'],[null,'2']],
+    ['Welcher Monat ist der erste im Jahr?','Welcher Monat ist der erste im Jahr?',[null,'Januar'],[null,'Dezember'],[null,'Juni']],
+    ['Welcher Monat ist der letzte im Jahr?','Welcher Monat ist der letzte im Jahr?',[null,'Dezember'],[null,'Januar'],[null,'Juli']],
+    ['Was passiert mit Wasser bei Frost?','Was passiert mit Wasser, wenn es sehr kalt ist?',['🧊','es gefriert'],['💨','es fliegt weg'],['🔥','es brennt']],
+    ['Was macht man auf dem Eis?','Was kann man auf dem Eis machen?',['⛸️','Schlittschuh laufen'],['🏊','schwimmen'],['🚴','Rad fahren']],
+    ['Welches Fest feiert man im Dezember?','Welches Fest feiert man im Dezember?',['🎄','Weihnachten'],['🐣','Ostern'],['🎃','Halloween']]
+  ]),
+  hsu5: P.quiz([
+    ['Welches Tier hält Winterschlaf?','Welches Tier hält Winterschlaf?',['🐻','Bär'],['🦊','Fuchs'],['🦌','Reh']],
+    ['Welches Tier hält KEINEN Winterschlaf?','Welches Tier hält keinen Winterschlaf?',['🐿️','Eichhörnchen'],['🐻','Bär'],['🦔','Igel']],
+    ['Was hilft Vögeln im Winter?','Wie kannst du Vögeln im Winter helfen?',['🌰','Futter geben'],['💧','Wasser wegnehmen'],['📢','laut sein']],
+    ['Welches Wetter ist das?','Welches Wetter zeigt dieses Bild?',['❄️','Schnee'],['☀️','Sonne'],['🌈','Regenbogen']],
+    ['Welches Wetter ist das?','Und dieses Wetter?',['⛈️','Gewitter'],['☀️','Sonne'],['🌫️','Nebel']],
+    ['Was brauchst du bei Schnee?','Was brauchst du, wenn es schneit?',['🧤','Handschuhe'],['🩴','Sandalen'],['🕶️','Sonnenbrille']],
+    ['Woraus besteht Schnee?','Woraus besteht Schnee?',['💧','Wasser'],['🍚','Reis'],['🧂','Salz']],
+    ['Welches Tier hat ein dickes Winterfell?','Welches Tier bekommt im Winter ein dickeres Fell?',['🦊','Fuchs'],['🐠','Fisch'],['🐍','Schlange']]
+  ]),
+  hsu6: P.quiz([
+    ['Was ist gesünder?','Was ist gesünder?',['🥗','Salat'],['🍟','Pommes']],
+    ['Was ist gesünder?','Was ist gesünder?',['🍇','Trauben'],['🍩','Donut']],
+    ['Wann putzt du die Zähne?','Wann putzt du deine Zähne?',['🌙','morgens und abends'],['🎂','nur am Geburtstag'],['🚫','nie']],
+    ['Was solltest du vor dem Essen tun?','Was solltest du vor dem Essen tun?',['🧼','Hände waschen'],['📺','fernsehen'],['🏃','rennen']],
+    ['Wie oft solltest du dich bewegen?','Wie oft solltest du dich bewegen?',['🏃','jeden Tag'],['📅','einmal im Jahr'],['🚫','nie']],
+    ['Was gehört zu einem guten Frühstück?','Was gehört zu einem guten Frühstück?',['🥣','Müsli'],['🍫','Schokolade'],['🥤','Cola']],
+    ['Wie viele Mahlzeiten am Tag sind gut?','Wie viele Mahlzeiten am Tag sind gut?',[null,'3'],[null,'1'],[null,'10']],
+    ['Was macht dich müde?','Was macht dich müde, wenn du zu wenig davon hast?',['😴','Schlaf'],['🍬','Bonbons'],['📺','Fernsehen']]
+  ]),
+  hsu7: P.quiz([
+    ['Was macht die Biene an der Blume?','Was holt sich die Biene von der Blume?',['🍯','Nektar'],['💧','Regen'],['🍂','Blätter']],
+    ['Welcher Teil der Pflanze ist unter der Erde?','Welcher Teil der Pflanze ist unter der Erde?',['🫚','Wurzel'],['🌸','Blüte'],['🍃','Blatt']],
+    ['Was kommt aus einem Samen?','Was wächst aus einem Samenkorn?',['🌱','Pflanze'],['🪨','Stein'],['💧','Wasser']],
+    ['Welches Tier lebt im Frühling neu auf?','Welches Tier siehst du im Frühling wieder?',['🦋','Schmetterling'],['🐧','Pinguin'],['🦈','Hai']],
+    ['Was machen Vögel im Frühling?','Was bauen Vögel im Frühling?',['🪹','ein Nest'],['🏠','ein Haus'],['🚗','ein Auto']],
+    ['Welche Farbe hat ein Blatt im Frühling?','Welche Farbe hat ein frisches Blatt?',['💚','grün'],['🤎','braun'],['🤍','weiß']],
+    ['Was braucht ein Baum zum Leben?','Was braucht ein Baum zum Leben?',['💧','Wasser'],['🍫','Schokolade'],['📺','Fernsehen']],
+    ['Welche Blume hat einen gelben Kopf?','Welche Blume hat einen großen gelben Kopf?',['🌻','Sonnenblume'],['🌹','Rose'],['🌷','Tulpe']]
+  ]),
+  hsu8: P.quiz([
+    ['Wie heißt das Kind vom Hund?','Wie heißt das Kind vom Hund?',['🐶','Welpe'],['🐣','Küken'],['🐑','Lamm']],
+    ['Wie heißt das Kind von der Katze?','Wie heißt das Kind von der Katze?',['🐱','Kätzchen'],['🐮','Kalb'],['🐷','Ferkel']],
+    ['Wie heißt das Kind vom Schwein?','Wie heißt das Kind vom Schwein?',['🐷','Ferkel'],['🐶','Welpe'],['🐣','Küken']],
+    ['Wie heißt das Kind vom Pferd?','Wie heißt das Kind vom Pferd?',['🐴','Fohlen'],['🐑','Lamm'],['🐮','Kalb']],
+    ['Woher kommt die Wolle?','Von welchem Tier kommt die Wolle?',['🐑','Schaf'],['🐄','Kuh'],['🐔','Huhn']],
+    ['Woher kommen die Eier?','Von welchem Tier kommen die Eier?',['🐔','Huhn'],['🐖','Schwein'],['🐑','Schaf']],
+    ['Wie macht das Schaf?','Wie macht das Schaf?',[null,'Mäh'],[null,'Muh'],[null,'Wau']],
+    ['Wie macht das Schwein?','Wie macht das Schwein?',[null,'Oink'],[null,'Miau'],[null,'Mäh']],
+    ['Was frisst die Kuh?','Was frisst eine Kuh am liebsten?',['🌾','Gras'],['🍖','Fleisch'],['🍫','Schokolade']],
+    ['Wo lebt ein Huhn?','Wo lebt ein Huhn?',['🏡','im Stall'],['🌊','im Meer'],['🌳','im Baum']]
+  ]),
+  hsu9: P.quiz([
+    ['Wie viele Beine hat eine Spinne?','Wie viele Beine hat eine Spinne?',[null,'8'],[null,'6'],[null,'4']],
+    ['Welches Tier lebt in einem Bau unter der Erde?','Welches Tier lebt unter der Erde?',['🐜','Ameise'],['🦋','Schmetterling'],['🐝','Biene']],
+    ['Was macht die Ameise?','Wofür sind Ameisen bekannt?',['💪','schwer tragen'],['🎵','singen'],['🏊','schwimmen']],
+    ['Welches Tier ist ein Insekt?','Welches Tier ist ein Insekt?',['🐞','Marienkäfer'],['🕷️','Spinne'],['🐌','Schnecke']],
+    ['Was trägt die Schnecke auf dem Rücken?','Was trägt die Schnecke auf dem Rücken?',['🐚','ihr Haus'],['🎒','Rucksack'],['☂️','Schirm']],
+    ['Wo wohnen Bienen?','Wo wohnen Bienen?',['🍯','im Bienenstock'],['🕳️','im Loch'],['🌊','im Wasser']],
+    ['Was machst du mittags?','Was machst du meistens mittags?',['🍽️','Mittagessen'],['😴','schlafen'],['🌙','Sterne schauen']],
+    ['Was machst du nach der Schule?','Was machst du meistens nach der Schule?',['📚','Hausaufgaben'],['🏫','Unterricht'],['🌅','aufstehen']]
+  ]),
+  hsu10: P.quiz([
+    ['Wohin kommt eine Glasflasche?','Wohin kommt eine Glasflasche?',['🫙','Glascontainer'],['📄','Papiertonne'],['🌳','in den Wald']],
+    ['Wohin kommt eine Zeitung?','Wohin kommt eine alte Zeitung?',['📄','Papiertonne'],['🍌','Biotonne'],['🌊','ins Meer']],
+    ['Was spart Wasser?','Womit sparst du Wasser?',['🚿','kurz duschen'],['🛁','lange baden'],['💦','Hahn laufen lassen']],
+    ['Wie kommst du umweltfreundlich zur Schule?','Wie kommst du umweltfreundlich zur Schule?',['🚶','zu Fuß'],['✈️','mit dem Flugzeug'],['🚗','mit dem Auto']],
+    ['Was ist gut für die Umwelt?','Was ist gut für die Umwelt?',['♻️','Recycling'],['🗑️','wegwerfen'],['🔥','verbrennen']],
+    ['Warum sind Bäume wichtig?','Warum sind Bäume wichtig?',['💨','sie machen Luft'],['📺','sie machen Fernsehen'],['🍬','sie machen Bonbons']],
+    ['Was brauchst du im Sommer draußen?','Was brauchst du im Sommer draußen?',['🧢','eine Kappe'],['🧤','Handschuhe'],['🧣','einen Schal']],
+    ['Was solltest du bei Hitze viel tun?','Was solltest du machen, wenn es sehr heiß ist?',['💧','viel trinken'],['🏃','viel rennen'],['🧥','Jacke anziehen']]
+  ])
+};
+
+/* Banken an die Module hängen; Rundengröße je Modul.
+   Wichtig: Kernaufgaben und Generatoren überschneiden sich (z. B. steckt
+   "3 + 2" sowohl kuratiert als auch in P.plus(10)). Ohne Dedup könnte
+   dieselbe Aufgabe zweimal in einer Runde landen. */
+const _idKey = a =>
+    a.type === 'anlaut' ? 'anlaut|' + a.word          // gleiches Wort = gleiche Aufgabe
+  : a.type === 'mc'     ? 'mc|' + (a.q || '') + '|' + // Frage UND Antwortsatz zählen:
+      a.options.map(o => `${o.e || ''}${o.t || ''}`).sort().join(',')
+  : a.type + '|' + JSON.stringify(a);                 // Rest: strukturgleich
+
+MODULES.forEach(m => {
+  const seen = new Set((m.activities || []).map(_idKey));
+  m.drill = (DRILLS[m.id] || []).filter(a => {
+    const k = _idKey(a);
+    if (seen.has(k)) return false;
+    seen.add(k);
+    return true;
+  });
+  m.round = m.round || 10;   // Aufgaben pro Spielrunde
+});
+

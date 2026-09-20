@@ -14,6 +14,19 @@ Die Module sind gegliedert nach **Fach** und **Lernfortschritt in Monaten**
 (Monat 1 = September bis Monat 10 = Juni/Juli). Über die Filter oben kann man ein
 Fach auswählen. Jedes Modul ist ein kleines Lernspiel aus mehreren Aufgaben.
 
+### Immer wieder üben
+
+Jedes Modul hat eine **Aufgabenbank** (Ø 24, bis zu 80 Aufgaben), aus der pro
+Runde **10 Aufgaben frisch gezogen** werden – jede Runde ist also anders und das
+Kind kann beliebig oft üben, ohne dass es langweilig wird. Auf jeder Kachel steht,
+wie viele Aufgaben zur Verfügung stehen (z. B. „10 von 51").
+
+Eine Runde mischt bewusst zwei Sorten:
+- **Kernaufgaben** (~40 %) – handverlesen, mit Erklärung nach der Antwort
+- **Übungsaufgaben** (~60 %) – aus `js/pools.js` erzeugter Übungsvorrat
+
+Die Reihenfolge bleibt dabei von leicht nach schwer sortiert.
+
 ### Spielarten
 - Anlaute & fehlende Buchstaben, Silben zählen
 - Rechnen am Zwanzigerfeld (Plus/Minus), Zählen
@@ -37,8 +50,9 @@ Komponenten. Läuft direkt auf **GitHub Pages**.
 ```
 index.html
 css/style.css
-js/data.js        <- der komplette Lerninhalt (Lehrplan)
+js/pools.js       <- Wortschatz & Aufgaben-Generatoren (Übungsbank)
 js/speakables.js  <- gemeinsame Quelle aller Sprechtexte
+js/data.js        <- der komplette Lerninhalt (Lehrplan)
 js/engine.js      <- Ton, Sprachausgabe, Konfetti
 js/games.js       <- die Spielarten
 js/app.js         <- Übersicht & Spielablauf
@@ -64,6 +78,10 @@ pip install edge-tts
 node tools/extract-phrases.mjs  # sammelt alle Sätze -> tools/phrases.json
 python tools/synthesize_audio.py # rendert fehlende MP3s + manifest.json
 ```
+
+Wichtig: Die Generatoren in `js/pools.js` sind **deterministisch** (kein Zufall
+beim Erzeugen – der Zufall steckt allein in der Auswahl zur Spielzeit). Nur
+dadurch kann die Pipeline jeden möglichen Satz vorab rendern.
 
 Die Pipeline arbeitet **inkrementell**: Es werden nur Clips erzeugt, die noch
 nicht existieren. Neue oder geänderte Aufgaben kosten also nur wenige Sekunden.

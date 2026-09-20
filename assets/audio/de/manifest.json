@@ -101,6 +101,86 @@
    "text": "Spure den Buchstaben nach: M. Das klingt so: mmm",
    "cat": "task"
   },
+  "9589bc20": {
+   "text": "Welcher Buchstabe ist am Anfang? Apfel.",
+   "cat": "task"
+  },
+  "f6f76bb9": {
+   "text": "Welcher Buchstabe ist am Anfang? Ampel.",
+   "cat": "task"
+  },
+  "66f0a9d9": {
+   "text": "Welcher Buchstabe ist am Anfang? Auto.",
+   "cat": "task"
+  },
+  "b79beb74": {
+   "text": "Welcher Buchstabe ist am Anfang? Ananas.",
+   "cat": "task"
+  },
+  "f4c792b3": {
+   "text": "Welcher Buchstabe ist am Anfang? Löwe.",
+   "cat": "task"
+  },
+  "5023c8df": {
+   "text": "Welcher Buchstabe ist am Anfang? Lampe.",
+   "cat": "task"
+  },
+  "f7cf8613": {
+   "text": "Welcher Buchstabe ist am Anfang? Leiter.",
+   "cat": "task"
+  },
+  "685713de": {
+   "text": "Welcher Buchstabe ist am Anfang? Mond.",
+   "cat": "task"
+  },
+  "e94ffae0": {
+   "text": "Welcher Buchstabe ist am Anfang? Mama.",
+   "cat": "task"
+  },
+  "1a324b7d": {
+   "text": "Welcher Buchstabe ist am Anfang? Messer.",
+   "cat": "task"
+  },
+  "08dfaf1a": {
+   "text": "Welcher Buchstabe ist am Anfang? Melone.",
+   "cat": "task"
+  },
+  "593bd1e6": {
+   "text": "Welcher Buchstabe ist am Anfang? Opa.",
+   "cat": "task"
+  },
+  "0fce8239": {
+   "text": "Welcher Buchstabe ist am Anfang? Ohr.",
+   "cat": "task"
+  },
+  "8987daef": {
+   "text": "Welcher Buchstabe ist am Anfang? Salat.",
+   "cat": "task"
+  },
+  "55da7ee9": {
+   "text": "Welcher Buchstabe ist am Anfang? Socke.",
+   "cat": "task"
+  },
+  "6e2b8e8a": {
+   "text": "Welcher Buchstabe ist am Anfang? Seife.",
+   "cat": "task"
+  },
+  "30426e51": {
+   "text": "Welcher Buchstabe ist am Anfang? Sofa.",
+   "cat": "task"
+  },
+  "e2bee92d": {
+   "text": "Spure den Buchstaben nach: O. Das klingt so: o",
+   "cat": "task"
+  },
+  "ed1d4fc5": {
+   "text": "Spure den Buchstaben nach: S. Das klingt so: s",
+   "cat": "task"
+  },
+  "2d4559b9": {
+   "text": "Spure den Buchstaben nach: L. Das klingt so: l",
+   "cat": "task"
+  },
   "854e294b": {
    "text": "Klatsch die Silben mit den Händen mit: Ba-na-ne!",
    "cat": "intro"
@@ -137,6 +217,134 @@
    "text": "Spure den Buchstaben nach: E. Das klingt so: e",
    "cat": "task"
   },
+  "bc93b4c1": {
+   "text": "Welcher Buchstabe ist am Anfang? Elefant.",
+   "cat": "task"
+  },
+  "ab58caa0": {
+   "text": "Welcher Buchstabe ist am Anfang? Ente.",
+   "cat": "task"
+  },
+  "1228a8ba": {
+   "text": "Welcher Buchstabe ist am Anfang? Erdbeere.",
+   "cat": "task"
+  },
+  "beea2817": {
+   "text": "Welcher Buchstabe ist am Anfang? Eule.",
+   "cat": "task"
+  },
+  "53cbb712": {
+   "text": "Welcher Buchstabe ist am Anfang? Eimer.",
+   "cat": "task"
+  },
+  "cb9449e7": {
+   "text": "Welcher Buchstabe ist am Anfang? Insel.",
+   "cat": "task"
+  },
+  "d8016755": {
+   "text": "Welcher Buchstabe ist am Anfang? Nuss.",
+   "cat": "task"
+  },
+  "6f1b5b4a": {
+   "text": "Welcher Buchstabe ist am Anfang? Nadel.",
+   "cat": "task"
+  },
+  "7af9f539": {
+   "text": "Welcher Buchstabe ist am Anfang? Rose.",
+   "cat": "task"
+  },
+  "a3998a7e": {
+   "text": "Welcher Buchstabe ist am Anfang? Rakete.",
+   "cat": "task"
+  },
+  "f3b7adc2": {
+   "text": "Welcher Buchstabe ist am Anfang? Ring.",
+   "cat": "task"
+  },
+  "dcbe119f": {
+   "text": "Welcher Buchstabe ist am Anfang? Regen.",
+   "cat": "task"
+  },
+  "de28d581": {
+   "text": "Welcher Buchstabe ist am Anfang? Tiger.",
+   "cat": "task"
+  },
+  "2ef82ae9": {
+   "text": "Welcher Buchstabe ist am Anfang? Tür.",
+   "cat": "task"
+  },
+  "311ad416": {
+   "text": "Welcher Buchstabe ist am Anfang? Torte.",
+   "cat": "task"
+  },
+  "69285b28": {
+   "text": "Welcher Buchstabe ist am Anfang? Tasse.",
+   "cat": "task"
+  },
+  "eae1cf0b": {
+   "text": "Sonne. Klatsch mit! Wie viele Silben hat Sonne?",
+   "cat": "task"
+  },
+  "8e4ffe6f": {
+   "text": "Banane. Klatsch mit! Wie viele Silben hat Banane?",
+   "cat": "task"
+  },
+  "8fe30083": {
+   "text": "Blume. Klatsch mit! Wie viele Silben hat Blume?",
+   "cat": "task"
+  },
+  "5c71a165": {
+   "text": "Apfel. Klatsch mit! Wie viele Silben hat Apfel?",
+   "cat": "task"
+  },
+  "58f24787": {
+   "text": "Elefant. Klatsch mit! Wie viele Silben hat Elefant?",
+   "cat": "task"
+  },
+  "646fb257": {
+   "text": "Tomate. Klatsch mit! Wie viele Silben hat Tomate?",
+   "cat": "task"
+  },
+  "063d8c87": {
+   "text": "Maus. Klatsch mit! Wie viele Silben hat Maus?",
+   "cat": "task"
+  },
+  "029686cb": {
+   "text": "Zitrone. Klatsch mit! Wie viele Silben hat Zitrone?",
+   "cat": "task"
+  },
+  "c9627e1b": {
+   "text": "Katze. Klatsch mit! Wie viele Silben hat Katze?",
+   "cat": "task"
+  },
+  "0acdeb4b": {
+   "text": "Baum. Klatsch mit! Wie viele Silben hat Baum?",
+   "cat": "task"
+  },
+  "2cab298d": {
+   "text": "Giraffe. Klatsch mit! Wie viele Silben hat Giraffe?",
+   "cat": "task"
+  },
+  "ab317383": {
+   "text": "Nase. Klatsch mit! Wie viele Silben hat Nase?",
+   "cat": "task"
+  },
+  "132a181f": {
+   "text": "Hund. Klatsch mit! Wie viele Silben hat Hund?",
+   "cat": "task"
+  },
+  "e0a5f0cb": {
+   "text": "Melone. Klatsch mit! Wie viele Silben hat Melone?",
+   "cat": "task"
+  },
+  "e2dd2d3f": {
+   "text": "Rakete. Klatsch mit! Wie viele Silben hat Rakete?",
+   "cat": "task"
+  },
+  "028397e7": {
+   "text": "Ball. Klatsch mit! Wie viele Silben hat Ball?",
+   "cat": "task"
+  },
   "318700fc": {
    "text": "Wow, du liest schon Wörter! Lies langsam, Buchstabe für Buchstabe.",
    "cat": "intro"
@@ -161,6 +369,66 @@
    "text": "Lies das Wort. M. O. N. D.",
    "cat": "task"
   },
+  "6d0973d7": {
+   "text": "Lies das Wort. B. A. L. L.",
+   "cat": "task"
+  },
+  "823ee181": {
+   "text": "Lies das Wort. H. A. U. S.",
+   "cat": "task"
+  },
+  "4cfcd69b": {
+   "text": "Lies das Wort. N. A. S. E.",
+   "cat": "task"
+  },
+  "09963c55": {
+   "text": "Lies das Wort. H. U. T.",
+   "cat": "task"
+  },
+  "af1be95b": {
+   "text": "Lies das Wort. I. G. E. L.",
+   "cat": "task"
+  },
+  "5a57265c": {
+   "text": "Lies das Wort. E. N. T. E.",
+   "cat": "task"
+  },
+  "d5dfabb1": {
+   "text": "Lies das Wort. N. U. S. S.",
+   "cat": "task"
+  },
+  "f92deca2": {
+   "text": "Lies das Wort. R. I. N. G.",
+   "cat": "task"
+  },
+  "e207cfc7": {
+   "text": "Lies das Wort. T. Ü. R.",
+   "cat": "task"
+  },
+  "6f775e14": {
+   "text": "Lies das Wort. Z. U. G.",
+   "cat": "task"
+  },
+  "a9421d63": {
+   "text": "Lies das Wort. O. H. R.",
+   "cat": "task"
+  },
+  "b287e15b": {
+   "text": "Lies das Wort. H. A. N. D.",
+   "cat": "task"
+  },
+  "e2ed9225": {
+   "text": "Lies das Wort. B. A. U. M.",
+   "cat": "task"
+  },
+  "5cd56109": {
+   "text": "Lies das Wort. F. I. S. C. H.",
+   "cat": "task"
+  },
+  "20183e91": {
+   "text": "Lies das Wort. K. A. T. Z. E.",
+   "cat": "task"
+  },
   "3ed6a435": {
    "text": "Reime klingen am Ende gleich: Hase und Nase!",
    "cat": "intro"
@@ -183,6 +451,50 @@
   },
   "7b48487a": {
    "text": "Was reimt sich auf Tür?",
+   "cat": "task"
+  },
+  "f4a54dc1": {
+   "text": "Was reimt sich auf Maus?",
+   "cat": "task"
+  },
+  "b6254eca": {
+   "text": "Was reimt sich auf Baum?",
+   "cat": "task"
+  },
+  "1e721d2a": {
+   "text": "Was reimt sich auf Rose?",
+   "cat": "task"
+  },
+  "8f6916ec": {
+   "text": "Was reimt sich auf Hut?",
+   "cat": "task"
+  },
+  "56e24858": {
+   "text": "Was reimt sich auf Ball?",
+   "cat": "task"
+  },
+  "751764bc": {
+   "text": "Was reimt sich auf Sonne?",
+   "cat": "task"
+  },
+  "f8ff8f0c": {
+   "text": "Was reimt sich auf Fisch?",
+   "cat": "task"
+  },
+  "ff030e68": {
+   "text": "Was reimt sich auf Nase?",
+   "cat": "task"
+  },
+  "63584adc": {
+   "text": "Was reimt sich auf Hand?",
+   "cat": "task"
+  },
+  "5a59a5c5": {
+   "text": "Was reimt sich auf Bein?",
+   "cat": "task"
+  },
+  "d1fdafcd": {
+   "text": "Was reimt sich auf Buch?",
    "cat": "task"
   },
   "19e598af": {
@@ -213,6 +525,34 @@
    "text": "Spure den Buchstaben nach: B. Das klingt so: b",
    "cat": "task"
   },
+  "fe09b3d1": {
+   "text": "Spure den Buchstaben nach: M. Das klingt so: m",
+   "cat": "task"
+  },
+  "60baa3e5": {
+   "text": "Spure den Buchstaben nach: R. Das klingt so: r",
+   "cat": "task"
+  },
+  "74700169": {
+   "text": "Spure den Buchstaben nach: T. Das klingt so: t",
+   "cat": "task"
+  },
+  "04c1c4c6": {
+   "text": "Welcher ist der große Buchstabe zu b?",
+   "cat": "task"
+  },
+  "04b2ba3c": {
+   "text": "Welcher ist der große Buchstabe zu d?",
+   "cat": "task"
+  },
+  "b6030629": {
+   "text": "Welcher ist der kleine Buchstabe zu R?",
+   "cat": "task"
+  },
+  "3628a082": {
+   "text": "Welcher ist der kleine Buchstabe zu E?",
+   "cat": "task"
+  },
   "41e79406": {
    "text": "Lies den Satz in Ruhe und such das passende Bild.",
    "cat": "intro"
@@ -237,6 +577,46 @@
    "text": "Lies: Der Vogel sitzt im Baum.",
    "cat": "task"
   },
+  "53af8917": {
+   "text": "Lies: Der Hund bellt laut.",
+   "cat": "task"
+  },
+  "0c3a96e9": {
+   "text": "Lies: Die Blume ist gelb.",
+   "cat": "task"
+  },
+  "64e02c33": {
+   "text": "Lies: Das Auto fährt schnell.",
+   "cat": "task"
+  },
+  "89dab075": {
+   "text": "Lies: Die Maus frisst Käse.",
+   "cat": "task"
+  },
+  "959cd8fd": {
+   "text": "Lies: Der Vogel fliegt hoch.",
+   "cat": "task"
+  },
+  "5f95b9ee": {
+   "text": "Lies: Es regnet heute.",
+   "cat": "task"
+  },
+  "cf3b10f8": {
+   "text": "Lies: Der Baum ist groß.",
+   "cat": "task"
+  },
+  "50eec2b6": {
+   "text": "Lies: Ich trinke Milch.",
+   "cat": "task"
+  },
+  "a6409fa4": {
+   "text": "Lies: Die Katze schläft.",
+   "cat": "task"
+  },
+  "a9608f3d": {
+   "text": "Lies: Der Fisch schwimmt im Wasser.",
+   "cat": "task"
+  },
   "4664b6ef": {
    "text": "Manche Laute klingen ganz besonders: sch, ei und au!",
    "cat": "intro"
@@ -259,6 +639,46 @@
   },
   "39a6e00b": {
    "text": "In welchem Wort hörst du au?",
+   "cat": "task"
+  },
+  "9a1b168f": {
+   "text": "Welcher Buchstabe ist am Anfang? Schiff.",
+   "cat": "task"
+  },
+  "a60f1930": {
+   "text": "Welcher Buchstabe ist am Anfang? Schere.",
+   "cat": "task"
+  },
+  "5a588edc": {
+   "text": "Welcher Buchstabe ist am Anfang? Schnecke.",
+   "cat": "task"
+  },
+  "289acff2": {
+   "text": "Welcher Buchstabe ist am Anfang? Schlüssel.",
+   "cat": "task"
+  },
+  "6c6ea570": {
+   "text": "Und hier: In welchem Wort hörst du ei?",
+   "cat": "task"
+  },
+  "ba06f0c0": {
+   "text": "Und hier: In welchem Wort hörst du au?",
+   "cat": "task"
+  },
+  "76400b4d": {
+   "text": "Noch einmal: In welchem Wort hörst du au?",
+   "cat": "task"
+  },
+  "5242b485": {
+   "text": "Welches Wort beginnt mit St?",
+   "cat": "task"
+  },
+  "524d41e1": {
+   "text": "Welches Wort beginnt mit Sp?",
+   "cat": "task"
+  },
+  "0531bfcf": {
+   "text": "In welchem Wort hörst du eu?",
    "cat": "task"
   },
   "e3aca47c": {
@@ -289,6 +709,74 @@
    "text": "Baum schreibt man mit au. Das a kommt zuerst!",
    "cat": "fact"
   },
+  "905260be": {
+   "text": "Maus. Welcher Buchstabe fehlt?",
+   "cat": "task"
+  },
+  "8707590a": {
+   "text": "Mond. Welcher Buchstabe fehlt?",
+   "cat": "task"
+  },
+  "c4e29e87": {
+   "text": "Rose. Welcher Buchstabe fehlt?",
+   "cat": "task"
+  },
+  "db677e8d": {
+   "text": "Nase. Welcher Buchstabe fehlt?",
+   "cat": "task"
+  },
+  "c641a2db": {
+   "text": "Hase. Welcher Buchstabe fehlt?",
+   "cat": "task"
+  },
+  "b16990bf": {
+   "text": "Katze. Welcher Buchstabe fehlt?",
+   "cat": "task"
+  },
+  "833cf159": {
+   "text": "Tiger. Welcher Buchstabe fehlt?",
+   "cat": "task"
+  },
+  "dee2a5f3": {
+   "text": "Nuss. Welcher Buchstabe fehlt?",
+   "cat": "task"
+  },
+  "530b9eee": {
+   "text": "Ring. Welcher Buchstabe fehlt?",
+   "cat": "task"
+  },
+  "ac551420": {
+   "text": "Zug. Welcher Buchstabe fehlt?",
+   "cat": "task"
+  },
+  "58cfa957": {
+   "text": "Hut. Welcher Buchstabe fehlt?",
+   "cat": "task"
+  },
+  "aef72361": {
+   "text": "Ohr. Welcher Buchstabe fehlt?",
+   "cat": "task"
+  },
+  "444b95ea": {
+   "text": "Apfel. Welcher Buchstabe fehlt?",
+   "cat": "task"
+  },
+  "f57fcec9": {
+   "text": "Igel. Welcher Buchstabe fehlt?",
+   "cat": "task"
+  },
+  "8728fb30": {
+   "text": "Ente. Welcher Buchstabe fehlt?",
+   "cat": "task"
+  },
+  "c770a0d9": {
+   "text": "Oma. Welcher Buchstabe fehlt?",
+   "cat": "task"
+  },
+  "8ad4989f": {
+   "text": "Uhr. Welcher Buchstabe fehlt?",
+   "cat": "task"
+  },
   "f7cb0662": {
    "text": "Der, die oder das? Sprich das Wort leise vor dich hin.",
    "cat": "intro"
@@ -317,6 +805,78 @@
    "text": "Es heißt die Maus. Probier es aus: Die kleine Maus rennt schnell!",
    "cat": "fact"
   },
+  "8493ae27": {
+   "text": "Der, die oder das? Welcher Artikel passt zu Hund?",
+   "cat": "task"
+  },
+  "c96e4b4f": {
+   "text": "Der, die oder das? Welcher Artikel passt zu Blume?",
+   "cat": "task"
+  },
+  "d921d49d": {
+   "text": "Der, die oder das? Welcher Artikel passt zu Haus?",
+   "cat": "task"
+  },
+  "869f65c9": {
+   "text": "Der, die oder das? Welcher Artikel passt zu Sonne?",
+   "cat": "task"
+  },
+  "6c1e845f": {
+   "text": "Der, die oder das? Welcher Artikel passt zu Ball?",
+   "cat": "task"
+  },
+  "2b092211": {
+   "text": "Der, die oder das? Welcher Artikel passt zu Auto?",
+   "cat": "task"
+  },
+  "8f06fe8d": {
+   "text": "Der, die oder das? Welcher Artikel passt zu Baum?",
+   "cat": "task"
+  },
+  "a7273f56": {
+   "text": "Der, die oder das? Welcher Artikel passt zu Buch?",
+   "cat": "task"
+  },
+  "def541c9": {
+   "text": "Der, die oder das? Welcher Artikel passt zu Katze?",
+   "cat": "task"
+  },
+  "a45eeb92": {
+   "text": "Der, die oder das? Welcher Artikel passt zu Mond?",
+   "cat": "task"
+  },
+  "22a9c559": {
+   "text": "Der, die oder das? Welcher Artikel passt zu Fisch?",
+   "cat": "task"
+  },
+  "70b436d1": {
+   "text": "Der, die oder das? Welcher Artikel passt zu Rose?",
+   "cat": "task"
+  },
+  "23402f01": {
+   "text": "Der, die oder das? Welcher Artikel passt zu Brot?",
+   "cat": "task"
+  },
+  "d7760fbb": {
+   "text": "Der, die oder das? Welcher Artikel passt zu Nase?",
+   "cat": "task"
+  },
+  "ce56f81b": {
+   "text": "Der, die oder das? Welcher Artikel passt zu Tiger?",
+   "cat": "task"
+  },
+  "d45f759c": {
+   "text": "Der, die oder das? Welcher Artikel passt zu Boot?",
+   "cat": "task"
+  },
+  "e0b701f5": {
+   "text": "Der, die oder das? Welcher Artikel passt zu Uhr?",
+   "cat": "task"
+  },
+  "dbff1746": {
+   "text": "Welches Wort ist ein Nomen?",
+   "cat": "task"
+  },
   "d02960dc": {
    "text": "Du bist schon ein richtiger Leseprofi. Viel Spaß bei den Geschichten!",
    "cat": "intro"
@@ -337,6 +897,22 @@
    "text": "Blume ist ein Nomen. Alle Nomen schreibt man groß!",
    "cat": "fact"
   },
+  "3f277ba4": {
+   "text": "Max hat Durst. Was braucht er?",
+   "cat": "task"
+  },
+  "50cb7561": {
+   "text": "Lisa ist müde. Was macht sie?",
+   "cat": "task"
+  },
+  "b2eeb5b5": {
+   "text": "Es regnet. Was nimmt Paul mit?",
+   "cat": "task"
+  },
+  "2c31bdbe": {
+   "text": "Oma hat Geburtstag. Was schenkt Mia?",
+   "cat": "task"
+  },
   "ea256ad1": {
    "text": "Zähle langsam mit dem Finger mit. Du schaffst das!",
    "cat": "intro"
@@ -351,6 +927,22 @@
   },
   "486ac2e4": {
    "text": "Wo sind mehr Äpfel?",
+   "cat": "task"
+  },
+  "044db2ed": {
+   "text": "Wo sind mehr Punkte?",
+   "cat": "task"
+  },
+  "0a35465c": {
+   "text": "Wo sind weniger Sterne?",
+   "cat": "task"
+  },
+  "645755f0": {
+   "text": "Wo sind mehr Herzen?",
+   "cat": "task"
+  },
+  "996f796e": {
+   "text": "Wo sind weniger Blumen?",
    "cat": "task"
   },
   "3ce02c03": {
@@ -373,28 +965,124 @@
    "text": "Spure die Zahl nach: 8. Das klingt so: acht",
    "cat": "task"
   },
+  "ca671124": {
+   "text": "Welche Zahl ist das? eins.",
+   "cat": "task"
+  },
+  "5100d5b8": {
+   "text": "Welche Zahl ist das? zwei.",
+   "cat": "task"
+  },
+  "cd618e57": {
+   "text": "Welche Zahl ist das? drei.",
+   "cat": "task"
+  },
+  "6eaba9d9": {
+   "text": "Welche Zahl ist das? vier.",
+   "cat": "task"
+  },
+  "d400f62e": {
+   "text": "Welche Zahl ist das? fünf.",
+   "cat": "task"
+  },
+  "8c9f5a59": {
+   "text": "Welche Zahl ist das? sechs.",
+   "cat": "task"
+  },
+  "fb364cc7": {
+   "text": "Welche Zahl ist das? sieben.",
+   "cat": "task"
+  },
+  "ee5126ef": {
+   "text": "Welche Zahl ist das? acht.",
+   "cat": "task"
+  },
+  "e1470d79": {
+   "text": "Welche Zahl ist das? neun.",
+   "cat": "task"
+  },
+  "edcb473a": {
+   "text": "Welche Zahl ist das? zehn.",
+   "cat": "task"
+  },
+  "9b6962c6": {
+   "text": "2, 3, 4, 5. Welche Zahl kommt als Nächstes?",
+   "cat": "task"
+  },
+  "355da222": {
+   "text": "3, 4, 5, 6. Welche Zahl kommt als Nächstes?",
+   "cat": "task"
+  },
+  "6476570a": {
+   "text": "4, 5, 6, 7. Welche Zahl kommt als Nächstes?",
+   "cat": "task"
+  },
+  "79ef8a96": {
+   "text": "5, 6, 7, 8. Welche Zahl kommt als Nächstes?",
+   "cat": "task"
+  },
+  "906d839e": {
+   "text": "6, 7, 8, 9. Welche Zahl kommt als Nächstes?",
+   "cat": "task"
+  },
+  "f92c2403": {
+   "text": "Spure die Zahl nach: 0. Das klingt so: null",
+   "cat": "task"
+  },
+  "b37164a2": {
+   "text": "Spure die Zahl nach: 1. Das klingt so: eins",
+   "cat": "task"
+  },
+  "70cfcc15": {
+   "text": "Spure die Zahl nach: 2. Das klingt so: zwei",
+   "cat": "task"
+  },
+  "0f1aff89": {
+   "text": "Spure die Zahl nach: 3. Das klingt so: drei",
+   "cat": "task"
+  },
+  "179ef228": {
+   "text": "Spure die Zahl nach: 4. Das klingt so: vier",
+   "cat": "task"
+  },
+  "afc9f350": {
+   "text": "Spure die Zahl nach: 5. Das klingt so: fünf",
+   "cat": "task"
+  },
+  "c425af0c": {
+   "text": "Spure die Zahl nach: 6. Das klingt so: sechs",
+   "cat": "task"
+  },
+  "f13fd6dd": {
+   "text": "Spure die Zahl nach: 7. Das klingt so: sieben",
+   "cat": "task"
+  },
+  "1daa9135": {
+   "text": "Spure die Zahl nach: 9. Das klingt so: neun",
+   "cat": "task"
+  },
   "212fe143": {
    "text": "Plus heißt: Es kommt etwas dazu. Das Zwanzigerfeld hilft dir.",
    "cat": "intro"
   },
-  "a29065c2": {
-   "text": "Wie viel ist 3 plus 2? Zähl die Felder, wenn du magst.",
+  "86e7fbaa": {
+   "text": "Wie viel ist 3 plus 2?",
    "cat": "task"
   },
-  "ab6a0af3": {
-   "text": "Wie viel ist 4 plus 4? Zähl die Felder, wenn du magst.",
+  "65e0d619": {
+   "text": "Wie viel ist 4 plus 4?",
    "cat": "task"
   },
-  "af41c6b6": {
-   "text": "Wie viel ist 5 plus 4? Zähl die Felder, wenn du magst.",
+  "18e40336": {
+   "text": "Wie viel ist 5 plus 4?",
    "cat": "task"
   },
-  "9be57508": {
-   "text": "Wie viel ist 6 plus 3? Zähl die Felder, wenn du magst.",
+  "486361c4": {
+   "text": "Wie viel ist 6 plus 3?",
    "cat": "task"
   },
-  "82d63f90": {
-   "text": "Wie viel ist 2 plus 7? Zähl die Felder, wenn du magst.",
+  "6657213c": {
+   "text": "Wie viel ist 2 plus 7?",
    "cat": "task"
   },
   "fb15b4a1": {
@@ -413,24 +1101,200 @@
    "text": "6 und 4 sind Zahlenfreunde: Zusammen ergeben sie 10!",
    "cat": "fact"
   },
+  "397b73f7": {
+   "text": "Wie viel ist 1 plus 1?",
+   "cat": "task"
+  },
+  "39793560": {
+   "text": "Wie viel ist 1 plus 2?",
+   "cat": "task"
+  },
+  "3976f6c9": {
+   "text": "Wie viel ist 1 plus 3?",
+   "cat": "task"
+  },
+  "b973eeb2": {
+   "text": "Wie viel ist 1 plus 4?",
+   "cat": "task"
+  },
+  "b971b01b": {
+   "text": "Wie viel ist 1 plus 5?",
+   "cat": "task"
+  },
+  "b96f7184": {
+   "text": "Wie viel ist 1 plus 6?",
+   "cat": "task"
+  },
+  "b96d32ed": {
+   "text": "Wie viel ist 1 plus 7?",
+   "cat": "task"
+  },
+  "b99203c6": {
+   "text": "Wie viel ist 1 plus 8?",
+   "cat": "task"
+  },
+  "b98fc52f": {
+   "text": "Wie viel ist 1 plus 9?",
+   "cat": "task"
+  },
+  "66662bc6": {
+   "text": "Wie viel ist 2 plus 1?",
+   "cat": "task"
+  },
+  "e65ea681": {
+   "text": "Wie viel ist 2 plus 2?",
+   "cat": "task"
+  },
+  "e660e518": {
+   "text": "Wie viel ist 2 plus 3?",
+   "cat": "task"
+  },
+  "66595fd3": {
+   "text": "Wie viel ist 2 plus 4?",
+   "cat": "task"
+  },
+  "e65c67ea": {
+   "text": "Wie viel ist 2 plus 5?",
+   "cat": "task"
+  },
+  "6654e2a5": {
+   "text": "Wie viel ist 2 plus 6?",
+   "cat": "task"
+  },
+  "e64f9bf7": {
+   "text": "Wie viel ist 2 plus 8?",
+   "cat": "task"
+  },
+  "06e07665": {
+   "text": "Wie viel ist 3 plus 1?",
+   "cat": "task"
+  },
+  "06e4f393": {
+   "text": "Wie viel ist 3 plus 3?",
+   "cat": "task"
+  },
+  "86ec78d8": {
+   "text": "Wie viel ist 3 plus 4?",
+   "cat": "task"
+  },
+  "86ea3a41": {
+   "text": "Wie viel ist 3 plus 5?",
+   "cat": "task"
+  },
+  "06f1bf86": {
+   "text": "Wie viel ist 3 plus 6?",
+   "cat": "task"
+  },
+  "06ef80ef": {
+   "text": "Wie viel ist 3 plus 7?",
+   "cat": "task"
+  },
+  "e5d950d4": {
+   "text": "Wie viel ist 4 plus 1?",
+   "cat": "task"
+  },
+  "e5db8f6b": {
+   "text": "Wie viel ist 4 plus 2?",
+   "cat": "task"
+  },
+  "65de9782": {
+   "text": "Wie viel ist 4 plus 3?",
+   "cat": "task"
+  },
+  "65e314b0": {
+   "text": "Wie viel ist 4 plus 5?",
+   "cat": "task"
+  },
+  "e5e61cc7": {
+   "text": "Wie viel ist 4 plus 6?",
+   "cat": "task"
+  },
+  "18d73743": {
+   "text": "Wie viel ist 5 plus 1?",
+   "cat": "task"
+  },
+  "18d4f8ac": {
+   "text": "Wie viel ist 5 plus 2?",
+   "cat": "task"
+  },
+  "18d2ba15": {
+   "text": "Wie viel ist 5 plus 3?",
+   "cat": "task"
+  },
+  "98e0fb1f": {
+   "text": "Wie viel ist 5 plus 5?",
+   "cat": "task"
+  },
+  "4867def2": {
+   "text": "Wie viel ist 6 plus 1?",
+   "cat": "task"
+  },
+  "4861232d": {
+   "text": "Wie viel ist 6 plus 2?",
+   "cat": "task"
+  },
+  "c86f6437": {
+   "text": "Wie viel ist 6 plus 4?",
+   "cat": "task"
+  },
+  "80f128b1": {
+   "text": "Wie viel ist 7 plus 1?",
+   "cat": "task"
+  },
+  "00f8adf6": {
+   "text": "Wie viel ist 7 plus 2?",
+   "cat": "task"
+  },
+  "80f5a5df": {
+   "text": "Wie viel ist 7 plus 3?",
+   "cat": "task"
+  },
+  "a45a7c00": {
+   "text": "Wie viel ist 8 plus 1?",
+   "cat": "task"
+  },
+  "245d8417": {
+   "text": "Wie viel ist 8 plus 2?",
+   "cat": "task"
+  },
+  "ea33d1cf": {
+   "text": "Wie viel ist 9 plus 1?",
+   "cat": "task"
+  },
+  "58563e78": {
+   "text": "Tim hat drei Murmeln und findet vier dazu. Wie viele hat er?",
+   "cat": "task"
+  },
+  "82f829a3": {
+   "text": "Im Korb sind fünf Eier. Oma legt drei dazu. Wie viele sind es?",
+   "cat": "task"
+  },
+  "e008327d": {
+   "text": "Vier Vögel sitzen im Baum. Zwei kommen dazu. Wie viele sind es?",
+   "cat": "task"
+  },
+  "a9a050ee": {
+   "text": "Du hast sechs Sticker und bekommst drei dazu. Wie viele hast du?",
+   "cat": "task"
+  },
   "243ddbe0": {
    "text": "Minus heißt: Es geht etwas weg.",
    "cat": "intro"
   },
-  "ace168c7": {
-   "text": "Wie viel ist 6 minus 2? Zähl die Felder, wenn du magst.",
+  "afcdf8d5": {
+   "text": "Wie viel ist 6 minus 2?",
    "cat": "task"
   },
-  "ed6ae0cf": {
-   "text": "Wie viel ist 7 minus 3? Zähl die Felder, wenn du magst.",
+  "53d53a8d": {
+   "text": "Wie viel ist 7 minus 3?",
    "cat": "task"
   },
-  "58aa10e0": {
-   "text": "Wie viel ist 9 minus 4? Zähl die Felder, wenn du magst.",
+  "6f9b8b2c": {
+   "text": "Wie viel ist 9 minus 4?",
    "cat": "task"
   },
-  "baf5f5f9": {
-   "text": "Wie viel ist 10 minus 5? Zähl die Felder, wenn du magst.",
+  "5a269e6b": {
+   "text": "Wie viel ist 10 minus 5?",
    "cat": "task"
   },
   "afd4a5f2": {
@@ -448,6 +1312,222 @@
   "32b4ab00": {
    "text": "Ein Dreieck hat drei Ecken und drei Seiten. Darum heißt es Drei-Eck!",
    "cat": "fact"
+  },
+  "c602bf6e": {
+   "text": "Wie viel ist 2 minus 1?",
+   "cat": "task"
+  },
+  "45fb3a29": {
+   "text": "Wie viel ist 2 minus 2?",
+   "cat": "task"
+  },
+  "4486e6df": {
+   "text": "Wie viel ist 3 minus 1?",
+   "cat": "task"
+  },
+  "4484a848": {
+   "text": "Wie viel ist 3 minus 2?",
+   "cat": "task"
+  },
+  "448269b1": {
+   "text": "Wie viel ist 3 minus 3?",
+   "cat": "task"
+  },
+  "7e987cdc": {
+   "text": "Wie viel ist 4 minus 1?",
+   "cat": "task"
+  },
+  "7e9abb73": {
+   "text": "Wie viel ist 4 minus 2?",
+   "cat": "task"
+  },
+  "7e9cfa0a": {
+   "text": "Wie viel ist 4 minus 3?",
+   "cat": "task"
+  },
+  "fea00221": {
+   "text": "Wie viel ist 4 minus 4?",
+   "cat": "task"
+  },
+  "c27e14a5": {
+   "text": "Wie viel ist 5 minus 1?",
+   "cat": "task"
+  },
+  "428599ea": {
+   "text": "Wie viel ist 5 minus 2?",
+   "cat": "task"
+  },
+  "c28291d3": {
+   "text": "Wie viel ist 5 minus 3?",
+   "cat": "task"
+  },
+  "428a1718": {
+   "text": "Wie viel ist 5 minus 4?",
+   "cat": "task"
+  },
+  "4287d881": {
+   "text": "Wie viel ist 5 minus 5?",
+   "cat": "task"
+  },
+  "2fd57e1a": {
+   "text": "Wie viel ist 6 minus 1?",
+   "cat": "task"
+  },
+  "afd0376c": {
+   "text": "Wie viel ist 6 minus 3?",
+   "cat": "task"
+  },
+  "2fdc39df": {
+   "text": "Wie viel ist 6 minus 4?",
+   "cat": "task"
+  },
+  "afdf41f6": {
+   "text": "Wie viel ist 6 minus 5?",
+   "cat": "task"
+  },
+  "2fd7bcb1": {
+   "text": "Wie viel ist 6 minus 6?",
+   "cat": "task"
+  },
+  "d3da813b": {
+   "text": "Wie viel ist 7 minus 1?",
+   "cat": "task"
+  },
+  "53d77924": {
+   "text": "Wie viel ist 7 minus 2?",
+   "cat": "task"
+  },
+  "53e683ae": {
+   "text": "Wie viel ist 7 minus 4?",
+   "cat": "task"
+  },
+  "53e44517": {
+   "text": "Wie viel ist 7 minus 5?",
+   "cat": "task"
+  },
+  "d3e13d00": {
+   "text": "Wie viel ist 7 minus 6?",
+   "cat": "task"
+  },
+  "d3defe69": {
+   "text": "Wie viel ist 7 minus 7?",
+   "cat": "task"
+  },
+  "ad5dd358": {
+   "text": "Wie viel ist 8 minus 1?",
+   "cat": "task"
+  },
+  "2d60db6f": {
+   "text": "Wie viel ist 8 minus 2?",
+   "cat": "task"
+  },
+  "2d631a06": {
+   "text": "Wie viel ist 8 minus 3?",
+   "cat": "task"
+  },
+  "2d51d0e5": {
+   "text": "Wie viel ist 8 minus 4?",
+   "cat": "task"
+  },
+  "2d540f7c": {
+   "text": "Wie viel ist 8 minus 5?",
+   "cat": "task"
+  },
+  "2d564e13": {
+   "text": "Wie viel ist 8 minus 6?",
+   "cat": "task"
+  },
+  "ad59562a": {
+   "text": "Wie viel ist 8 minus 7?",
+   "cat": "task"
+  },
+  "ad480d09": {
+   "text": "Wie viel ist 8 minus 8?",
+   "cat": "task"
+  },
+  "efa31071": {
+   "text": "Wie viel ist 9 minus 1?",
+   "cat": "task"
+  },
+  "6faa95b6": {
+   "text": "Wie viel ist 9 minus 2?",
+   "cat": "task"
+  },
+  "efa78d9f": {
+   "text": "Wie viel ist 9 minus 3?",
+   "cat": "task"
+  },
+  "6f994c95": {
+   "text": "Wie viel ist 9 minus 5?",
+   "cat": "task"
+  },
+  "efa0d1da": {
+   "text": "Wie viel ist 9 minus 6?",
+   "cat": "task"
+  },
+  "6f9dc9c3": {
+   "text": "Wie viel ist 9 minus 7?",
+   "cat": "task"
+  },
+  "ef91c750": {
+   "text": "Wie viel ist 9 minus 8?",
+   "cat": "task"
+  },
+  "6f8ebf39": {
+   "text": "Wie viel ist 9 minus 9?",
+   "cat": "task"
+  },
+  "5a312bc7": {
+   "text": "Wie viel ist 10 minus 1?",
+   "cat": "task"
+  },
+  "da2e23b0": {
+   "text": "Wie viel ist 10 minus 2?",
+   "cat": "task"
+  },
+  "da2be519": {
+   "text": "Wie viel ist 10 minus 3?",
+   "cat": "task"
+  },
+  "da29a682": {
+   "text": "Wie viel ist 10 minus 4?",
+   "cat": "task"
+  },
+  "5a245fd4": {
+   "text": "Wie viel ist 10 minus 6?",
+   "cat": "task"
+  },
+  "5a22213d": {
+   "text": "Wie viel ist 10 minus 7?",
+   "cat": "task"
+  },
+  "5a46f216": {
+   "text": "Wie viel ist 10 minus 8?",
+   "cat": "task"
+  },
+  "5a44b37f": {
+   "text": "Wie viel ist 10 minus 9?",
+   "cat": "task"
+  },
+  "f34c60eb": {
+   "text": "Wie viel ist 10 minus 10?",
+   "cat": "task"
+  },
+  "7d9bf563": {
+   "text": "Neun Luftballons. Vier platzen. Wie viele bleiben?",
+   "cat": "task"
+  },
+  "07631355": {
+   "text": "Auf dem Teller sind sieben Kekse. Du isst zwei. Wie viele bleiben?",
+   "cat": "task"
+  },
+  "546d1ed2": {
+   "text": "Zehn Enten schwimmen. Drei fliegen weg. Wie viele bleiben?",
+   "cat": "task"
+  },
+  "8a47fe1f": {
+   "text": "Du hast acht Bonbons und teilst fünf aus. Wie viele bleiben?",
+   "cat": "task"
   },
   "dcc0ee00": {
    "text": "Formen sind überall: Schau dich mal um!",
@@ -481,6 +1561,34 @@
    "text": "Sortiere: rund oder eckig? Ziehen oder antippen, dann den richtigen Korb wählen.",
    "cat": "task"
   },
+  "72b5e242": {
+   "text": "Welche Form ist ein Quadrat?",
+   "cat": "task"
+  },
+  "71ae476d": {
+   "text": "Welche Form hat drei Ecken?",
+   "cat": "task"
+  },
+  "e20ef09c": {
+   "text": "Welche Form hat keine einzige Ecke?",
+   "cat": "task"
+  },
+  "82cdc1d3": {
+   "text": "Welche Form hat vier Ecken?",
+   "cat": "task"
+  },
+  "2273f076": {
+   "text": "Welcher Körper ist ein Würfel?",
+   "cat": "task"
+  },
+  "9e04ec5e": {
+   "text": "Welcher Körper ist eine Kugel?",
+   "cat": "task"
+  },
+  "9f584939": {
+   "text": "Welches Bild ist spiegelgleich?",
+   "cat": "task"
+  },
   "abaf7418": {
    "text": "Jetzt wird es spannend: die Zahlen bis zwanzig!",
    "cat": "intro"
@@ -509,28 +1617,116 @@
    "text": "Die 20 hat eine 2 vorne und eine 0 hinten: zwei volle Zehner!",
    "cat": "fact"
   },
+  "cb6530a6": {
+   "text": "Welche Zahl ist das? elf.",
+   "cat": "task"
+  },
+  "a1492607": {
+   "text": "Welche Zahl ist das? zwölf.",
+   "cat": "task"
+  },
+  "769fb732": {
+   "text": "Welche Zahl ist das? dreizehn.",
+   "cat": "task"
+  },
+  "6d222a94": {
+   "text": "Welche Zahl ist das? vierzehn.",
+   "cat": "task"
+  },
+  "a387ec67": {
+   "text": "Welche Zahl ist das? fünfzehn.",
+   "cat": "task"
+  },
+  "0f9c7c0f": {
+   "text": "Welche Zahl ist das? sechzehn.",
+   "cat": "task"
+  },
+  "682aaea3": {
+   "text": "Welche Zahl ist das? siebzehn.",
+   "cat": "task"
+  },
+  "42b838fa": {
+   "text": "Welche Zahl ist das? achtzehn.",
+   "cat": "task"
+  },
+  "611d5bb4": {
+   "text": "Welche Zahl ist das? neunzehn.",
+   "cat": "task"
+  },
+  "3d28683f": {
+   "text": "Welche Zahl ist das? zwanzig.",
+   "cat": "task"
+  },
+  "99d19e1a": {
+   "text": "10, 11, 12, 13. Welche Zahl kommt als Nächstes?",
+   "cat": "task"
+  },
+  "080948da": {
+   "text": "12, 13, 14, 15. Welche Zahl kommt als Nächstes?",
+   "cat": "task"
+  },
+  "d6040826": {
+   "text": "13, 14, 15, 16. Welche Zahl kommt als Nächstes?",
+   "cat": "task"
+  },
+  "c280e0fa": {
+   "text": "14, 15, 16, 17. Welche Zahl kommt als Nächstes?",
+   "cat": "task"
+  },
+  "cf8733e6": {
+   "text": "15, 16, 17, 18. Welche Zahl kommt als Nächstes?",
+   "cat": "task"
+  },
+  "f161e3fa": {
+   "text": "16, 17, 18, 19. Welche Zahl kommt als Nächstes?",
+   "cat": "task"
+  },
+  "a478584e": {
+   "text": "2, 4, 6, 8. Welche Zahl kommt als Nächstes?",
+   "cat": "task"
+  },
+  "bf296f9b": {
+   "text": "4, 6, 8, 10. Welche Zahl kommt als Nächstes?",
+   "cat": "task"
+  },
+  "3acd0e42": {
+   "text": "6, 8, 10, 12. Welche Zahl kommt als Nächstes?",
+   "cat": "task"
+  },
+  "be458327": {
+   "text": "8, 10, 12, 14. Welche Zahl kommt als Nächstes?",
+   "cat": "task"
+  },
+  "f62ad256": {
+   "text": "10, 12, 14, 16. Welche Zahl kommt als Nächstes?",
+   "cat": "task"
+  },
+  "6e40204e": {
+   "text": "12, 14, 16, 18. Welche Zahl kommt als Nächstes?",
+   "cat": "task"
+  },
   "3f90dd85": {
    "text": "Du bist schon ein Rechenfuchs! Zähl im Feld nach, wenn du magst.",
    "cat": "intro"
   },
-  "904cf6a8": {
-   "text": "Wie viel ist 8 plus 5? Zähl die Felder, wenn du magst.",
+  "2450b824": {
+   "text": "Wie viel ist 8 plus 5?",
    "cat": "task"
   },
-  "09d1ab92": {
-   "text": "Wie viel ist 7 plus 6? Zähl die Felder, wenn du magst.",
+  "80eeea1a": {
+   "text": "Wie viel ist 7 plus 6?",
    "cat": "task"
   },
-  "c958bce2": {
-   "text": "Wie viel ist 9 plus 4? Zähl die Felder, wenn du magst.",
+  "6a2c4c8a": {
+   "text": "Wie viel ist 9 plus 4?",
    "cat": "task"
   },
-  "cc9f55b0": {
-   "text": "Wie viel ist 13 minus 5? Zähl die Felder, wenn du magst.",
+  "dc6a961c": {
+   "text": "Wie viel ist 13 minus 5?",
    "cat": "task"
   },
-  "74f517f0": {
-   "text": "Wie viel ist 16 minus 8? Zähl die Felder, wenn du magst.",
+  "8e1bc6dc": {
+   "text": "Wie viel ist 16 minus 8?",
    "cat": "task"
   },
   "4126f5e0": {
@@ -548,6 +1744,298 @@
   "4c14eda1": {
    "text": "7 plus 7 ist 14. Verdoppeln heißt: die gleiche Zahl noch einmal dazu.",
    "cat": "fact"
+  },
+  "e5e85b5e": {
+   "text": "Wie viel ist 4 plus 7?",
+   "cat": "task"
+  },
+  "e5ea99f5": {
+   "text": "Wie viel ist 4 plus 8?",
+   "cat": "task"
+  },
+  "e5ecd88c": {
+   "text": "Wie viel ist 4 plus 9?",
+   "cat": "task"
+  },
+  "98debc88": {
+   "text": "Wie viel ist 5 plus 6?",
+   "cat": "task"
+  },
+  "98dc7df1": {
+   "text": "Wie viel ist 5 plus 7?",
+   "cat": "task"
+  },
+  "18c5ee22": {
+   "text": "Wie viel ist 5 plus 8?",
+   "cat": "task"
+  },
+  "18c3af8b": {
+   "text": "Wie viel ist 5 plus 9?",
+   "cat": "task"
+  },
+  "48726c4e": {
+   "text": "Wie viel ist 6 plus 5?",
+   "cat": "task"
+  },
+  "c86ae709": {
+   "text": "Wie viel ist 6 plus 6?",
+   "cat": "task"
+  },
+  "c86d25a0": {
+   "text": "Wie viel ist 6 plus 7?",
+   "cat": "task"
+  },
+  "48792813": {
+   "text": "Wie viel ist 6 plus 8?",
+   "cat": "task"
+  },
+  "c87c302a": {
+   "text": "Wie viel ist 6 plus 9?",
+   "cat": "task"
+  },
+  "00e9a36c": {
+   "text": "Wie viel ist 7 plus 4?",
+   "cat": "task"
+  },
+  "00e764d5": {
+   "text": "Wie viel ist 7 plus 5?",
+   "cat": "task"
+  },
+  "00ebe203": {
+   "text": "Wie viel ist 7 plus 7?",
+   "cat": "task"
+  },
+  "80dfdf90": {
+   "text": "Wie viel ist 7 plus 8?",
+   "cat": "task"
+  },
+  "00dcd779": {
+   "text": "Wie viel ist 7 plus 9?",
+   "cat": "task"
+  },
+  "245fc2ae": {
+   "text": "Wie viel ist 8 plus 3?",
+   "cat": "task"
+  },
+  "244e798d": {
+   "text": "Wie viel ist 8 plus 4?",
+   "cat": "task"
+  },
+  "a453c03b": {
+   "text": "Wie viel ist 8 plus 6?",
+   "cat": "task"
+  },
+  "a455fed2": {
+   "text": "Wie viel ist 8 plus 7?",
+   "cat": "task"
+  },
+  "246c8ea1": {
+   "text": "Wie viel ist 8 plus 8?",
+   "cat": "task"
+  },
+  "246ecd38": {
+   "text": "Wie viel ist 8 plus 9?",
+   "cat": "task"
+  },
+  "ea319338": {
+   "text": "Wie viel ist 9 plus 2?",
+   "cat": "task"
+  },
+  "ea2f54a1": {
+   "text": "Wie viel ist 9 plus 3?",
+   "cat": "task"
+  },
+  "6a2a0df3": {
+   "text": "Wie viel ist 9 plus 5?",
+   "cat": "task"
+  },
+  "6a27cf5c": {
+   "text": "Wie viel ist 9 plus 6?",
+   "cat": "task"
+  },
+  "ea24c745": {
+   "text": "Wie viel ist 9 plus 7?",
+   "cat": "task"
+  },
+  "ea2288ae": {
+   "text": "Wie viel ist 9 plus 8?",
+   "cat": "task"
+  },
+  "ea204a17": {
+   "text": "Wie viel ist 9 plus 9?",
+   "cat": "task"
+  },
+  "39e9a131": {
+   "text": "Wie viel ist 11 minus 2?",
+   "cat": "task"
+  },
+  "39ebdfc8": {
+   "text": "Wie viel ist 11 minus 3?",
+   "cat": "task"
+  },
+  "b9e45a83": {
+   "text": "Wie viel ist 11 minus 4?",
+   "cat": "task"
+  },
+  "39e7629a": {
+   "text": "Wie viel ist 11 minus 5?",
+   "cat": "task"
+  },
+  "b9dfdd55": {
+   "text": "Wie viel ist 11 minus 6?",
+   "cat": "task"
+  },
+  "b9e21bec": {
+   "text": "Wie viel ist 11 minus 7?",
+   "cat": "task"
+  },
+  "39da96a7": {
+   "text": "Wie viel ist 11 minus 8?",
+   "cat": "task"
+  },
+  "39dcd53e": {
+   "text": "Wie viel ist 11 minus 9?",
+   "cat": "task"
+  },
+  "f6445ebf": {
+   "text": "Wie viel ist 12 minus 3?",
+   "cat": "task"
+  },
+  "f63792cc": {
+   "text": "Wie viel ist 12 minus 4?",
+   "cat": "task"
+  },
+  "f6355435": {
+   "text": "Wie viel ist 12 minus 5?",
+   "cat": "task"
+  },
+  "763cd97a": {
+   "text": "Wie viel ist 12 minus 6?",
+   "cat": "task"
+  },
+  "763a9ae3": {
+   "text": "Wie viel ist 12 minus 7?",
+   "cat": "task"
+  },
+  "762dcef0": {
+   "text": "Wie viel ist 12 minus 8?",
+   "cat": "task"
+  },
+  "762b9059": {
+   "text": "Wie viel ist 12 minus 9?",
+   "cat": "task"
+  },
+  "5c678e05": {
+   "text": "Wie viel ist 13 minus 4?",
+   "cat": "task"
+  },
+  "dc6cd4b3": {
+   "text": "Wie viel ist 13 minus 6?",
+   "cat": "task"
+  },
+  "dc6f134a": {
+   "text": "Wie viel ist 13 minus 7?",
+   "cat": "task"
+  },
+  "dc5dca29": {
+   "text": "Wie viel ist 13 minus 8?",
+   "cat": "task"
+  },
+  "dc6008c0": {
+   "text": "Wie viel ist 13 minus 9?",
+   "cat": "task"
+  },
+  "8a0cfbdf": {
+   "text": "Wie viel ist 14 minus 5?",
+   "cat": "task"
+  },
+  "8a0abd48": {
+   "text": "Wie viel ist 14 minus 6?",
+   "cat": "task"
+  },
+  "8a087eb1": {
+   "text": "Wie viel ist 14 minus 7?",
+   "cat": "task"
+  },
+  "09f1eee2": {
+   "text": "Wie viel ist 14 minus 8?",
+   "cat": "task"
+  },
+  "09efb04b": {
+   "text": "Wie viel ist 14 minus 9?",
+   "cat": "task"
+  },
+  "312acdd9": {
+   "text": "Wie viel ist 15 minus 6?",
+   "cat": "task"
+  },
+  "312d0c70": {
+   "text": "Wie viel ist 15 minus 7?",
+   "cat": "task"
+  },
+  "3139d863": {
+   "text": "Wie viel ist 15 minus 8?",
+   "cat": "task"
+  },
+  "313c16fa": {
+   "text": "Wie viel ist 15 minus 9?",
+   "cat": "task"
+  },
+  "0e144197": {
+   "text": "Wie viel ist 16 minus 7?",
+   "cat": "task"
+  },
+  "0e18bec5": {
+   "text": "Wie viel ist 16 minus 9?",
+   "cat": "task"
+  },
+  "f076b0a5": {
+   "text": "Wie viel ist 17 minus 8?",
+   "cat": "task"
+  },
+  "f078ef3c": {
+   "text": "Wie viel ist 17 minus 9?",
+   "cat": "task"
+  },
+  "188e93c7": {
+   "text": "Wie viel ist 18 minus 9?",
+   "cat": "task"
+  },
+  "c84c88e4": {
+   "text": "Verdopple die Fünf! Was ist 5 plus 5?",
+   "cat": "task"
+  },
+  "ffe470fd": {
+   "text": "Verdopple die Sechs! Was ist 6 plus 6?",
+   "cat": "task"
+  },
+  "76a83a19": {
+   "text": "Verdopple die Acht! Was ist 8 plus 8?",
+   "cat": "task"
+  },
+  "b0850e29": {
+   "text": "Verdopple die Neun! Was ist 9 plus 9?",
+   "cat": "task"
+  },
+  "5e92caff": {
+   "text": "Drei plus neun ist dasselbe wie neun plus wie viel?",
+   "cat": "task"
+  },
+  "b7f45e97": {
+   "text": "Sieben plus vier ist dasselbe wie vier plus wie viel?",
+   "cat": "task"
+  },
+  "cdbe2b61": {
+   "text": "Acht plus wie viel ergibt zehn?",
+   "cat": "task"
+  },
+  "467a2c5f": {
+   "text": "Sechs plus wie viel ergibt zehn?",
+   "cat": "task"
+  },
+  "5eef91d1": {
+   "text": "Drei plus wie viel ergibt zehn?",
+   "cat": "task"
   },
   "cd5e2baa": {
    "text": "Heute spielen wir Einkaufen: Wir rechnen mit Geld!",
@@ -581,6 +2069,30 @@
    "text": "5 minus 2 ist 3. Das nennt man Rückgeld!",
    "cat": "fact"
   },
+  "b7c7069f": {
+   "text": "Das Brot kostet drei Euro. Du zahlst mit fünf Euro. Wie viel bekommst du zurück?",
+   "cat": "task"
+  },
+  "fd6f05ae": {
+   "text": "Der Apfel kostet einen Euro. Du zahlst mit fünf Euro. Wie viel bekommst du zurück?",
+   "cat": "task"
+  },
+  "7cd730cf": {
+   "text": "Du hast vier Euro und bekommst fünf Euro dazu. Wie viel hast du?",
+   "cat": "task"
+  },
+  "4556ca52": {
+   "text": "Das Eis kostet drei Euro, der Saft zwei Euro. Wie viel kostet beides zusammen?",
+   "cat": "task"
+  },
+  "810ad2d1": {
+   "text": "Was kostet wohl mehr?",
+   "cat": "task"
+  },
+  "2ca06a22": {
+   "text": "Was kostet wohl weniger?",
+   "cat": "task"
+  },
   "7863966a": {
    "text": "Tick, tack! Heute lernst du die Uhr kennen.",
    "cat": "intro"
@@ -607,6 +2119,38 @@
   },
   "8d499e0d": {
    "text": "Wann machst du das? Ziehen oder antippen, dann den richtigen Korb wählen.",
+   "cat": "task"
+  },
+  "f5c94a4d": {
+   "text": "Welcher Wochentag kommt nach Dienstag?",
+   "cat": "task"
+  },
+  "ac4a22c8": {
+   "text": "Welcher Wochentag kommt nach Freitag?",
+   "cat": "task"
+  },
+  "245ee711": {
+   "text": "Welcher Wochentag kommt vor Montag?",
+   "cat": "task"
+  },
+  "7c701eb7": {
+   "text": "Wie viele Tage hat eine Woche?",
+   "cat": "task"
+  },
+  "5cfb95aa": {
+   "text": "Wie viele Monate hat ein Jahr?",
+   "cat": "task"
+  },
+  "fb170692": {
+   "text": "Wie viele Stunden hat ein Tag?",
+   "cat": "task"
+  },
+  "84d31101": {
+   "text": "Wann frühstückst du?",
+   "cat": "task"
+  },
+  "b8def637": {
+   "text": "Wann gehst du ins Bett?",
    "cat": "task"
   },
   "cb38c9a1": {
@@ -641,6 +2185,34 @@
    "text": "Im Nest sind fünf Eier. Zwei Küken schlüpfen. Wie viele Eier sind noch da?",
    "cat": "task"
   },
+  "16100c3c": {
+   "text": "Was ist kürzer?",
+   "cat": "task"
+  },
+  "f6e4577b": {
+   "text": "Was ist leichter?",
+   "cat": "task"
+  },
+  "af73289c": {
+   "text": "Was ist größer?",
+   "cat": "task"
+  },
+  "09050c75": {
+   "text": "Was ist kleiner?",
+   "cat": "task"
+  },
+  "4dd3ad5e": {
+   "text": "Womit misst du, wie lang etwas ist?",
+   "cat": "task"
+  },
+  "bb1307f1": {
+   "text": "Womit misst du die Zeit?",
+   "cat": "task"
+  },
+  "a891baae": {
+   "text": "Womit misst du, wie schwer etwas ist?",
+   "cat": "task"
+  },
   "4db4c3ee": {
    "text": "Herzlich willkommen in der Schule! Hier lernen wir zusammen.",
    "cat": "intro"
@@ -667,6 +2239,38 @@
   },
   "c3664361": {
    "text": "Was gehört in die Schule? Ziehen oder antippen, dann den richtigen Korb wählen.",
+   "cat": "task"
+  },
+  "bf9e349b": {
+   "text": "Womit siehst du?",
+   "cat": "task"
+  },
+  "b3243b36": {
+   "text": "Womit schmeckst du?",
+   "cat": "task"
+  },
+  "fedfc3e1": {
+   "text": "Womit fühlst du?",
+   "cat": "task"
+  },
+  "7ab92933": {
+   "text": "Was gehört in deinen Schulranzen?",
+   "cat": "task"
+  },
+  "40c3d11a": {
+   "text": "Was macht man in der Pause?",
+   "cat": "task"
+  },
+  "5c04277c": {
+   "text": "Ein Kind ist traurig. Was tust du?",
+   "cat": "task"
+  },
+  "80adbac3": {
+   "text": "Wie grüßt man am Morgen?",
+   "cat": "task"
+  },
+  "c2c33b56": {
+   "text": "Was sagst du, wenn du etwas möchtest?",
    "cat": "task"
   },
   "8d1ca0ac": {
@@ -699,6 +2303,38 @@
   },
   "a30796d2": {
    "text": "Was passt zum Herbst? Ziehen oder antippen, dann den richtigen Korb wählen.",
+   "cat": "task"
+  },
+  "12bce4c8": {
+   "text": "Welche Farbe haben die Blätter im Herbst?",
+   "cat": "task"
+  },
+  "c7811688": {
+   "text": "Was wächst im Herbst am Baum?",
+   "cat": "task"
+  },
+  "d10446d5": {
+   "text": "Welches Tier fliegt im Herbst in den Süden?",
+   "cat": "task"
+  },
+  "5c7792e0": {
+   "text": "Was braucht man bei viel Wind?",
+   "cat": "task"
+  },
+  "42aba2a2": {
+   "text": "Welche Frucht reift im Herbst?",
+   "cat": "task"
+  },
+  "36ba2930": {
+   "text": "Was macht der Bauer im Herbst?",
+   "cat": "task"
+  },
+  "51d9d084": {
+   "text": "Wie viele Jahreszeiten gibt es?",
+   "cat": "task"
+  },
+  "2c412f6a": {
+   "text": "Welche Jahreszeit kommt vor dem Herbst?",
    "cat": "task"
   },
   "f8ba9da2": {
@@ -745,6 +2381,38 @@
    "text": "Der Helm schützt deinen Kopf wie eine harte Schale.",
    "cat": "fact"
   },
+  "b87a6274": {
+   "text": "Die Ampel ist gelb. Was bedeutet das?",
+   "cat": "task"
+  },
+  "8b28765a": {
+   "text": "Wo gehst du auf dem Weg zur Schule?",
+   "cat": "task"
+  },
+  "4e99801f": {
+   "text": "Was machst du an der Bushaltestelle?",
+   "cat": "task"
+  },
+  "5136ec6d": {
+   "text": "Was bedeutet ein rotes Stoppschild?",
+   "cat": "task"
+  },
+  "d2bc4489": {
+   "text": "Was trägst du am besten, wenn es dunkel ist?",
+   "cat": "task"
+  },
+  "8cc7058e": {
+   "text": "Wo sitzt du sicher im Auto?",
+   "cat": "task"
+  },
+  "afc30620": {
+   "text": "Darfst du zwischen parkenden Autos auf die Straße laufen?",
+   "cat": "task"
+  },
+  "430610ae": {
+   "text": "Wofür ist die Fahrradklingel da?",
+   "cat": "task"
+  },
   "563f4b5b": {
    "text": "Brrr, ist das kalt! Der Winter und die Feste sind da.",
    "cat": "intro"
@@ -777,6 +2445,38 @@
    "text": "Jede Schneeflocke sieht anders aus. Keine gleicht der anderen!",
    "cat": "fact"
   },
+  "8fd82673": {
+   "text": "Was gehört zum Winter?",
+   "cat": "task"
+  },
+  "4df36fe8": {
+   "text": "Was ziehst du an, wenn es kalt ist?",
+   "cat": "task"
+  },
+  "1a57143e": {
+   "text": "Wie viele Kerzen brennen am vierten Advent?",
+   "cat": "task"
+  },
+  "05325dc2": {
+   "text": "Welcher Monat ist der erste im Jahr?",
+   "cat": "task"
+  },
+  "e599775f": {
+   "text": "Welcher Monat ist der letzte im Jahr?",
+   "cat": "task"
+  },
+  "a199825d": {
+   "text": "Was passiert mit Wasser, wenn es sehr kalt ist?",
+   "cat": "task"
+  },
+  "4a26d1d8": {
+   "text": "Was kann man auf dem Eis machen?",
+   "cat": "task"
+  },
+  "6073be5c": {
+   "text": "Welches Fest feiert man im Dezember?",
+   "cat": "task"
+  },
   "30606911": {
    "text": "Was machen die Tiere, wenn es schneit? Finde es heraus!",
    "cat": "intro"
@@ -804,6 +2504,38 @@
   "e2563ba2": {
    "text": "Störche und Schwalben fliegen viele tausend Kilometer bis nach Afrika.",
    "cat": "fact"
+  },
+  "f12204ae": {
+   "text": "Welches Tier hält Winterschlaf?",
+   "cat": "task"
+  },
+  "ad502a60": {
+   "text": "Welches Tier hält keinen Winterschlaf?",
+   "cat": "task"
+  },
+  "32f905af": {
+   "text": "Wie kannst du Vögeln im Winter helfen?",
+   "cat": "task"
+  },
+  "21f8c659": {
+   "text": "Welches Wetter zeigt dieses Bild?",
+   "cat": "task"
+  },
+  "965a2d59": {
+   "text": "Und dieses Wetter?",
+   "cat": "task"
+  },
+  "6acf5f2c": {
+   "text": "Was brauchst du, wenn es schneit?",
+   "cat": "task"
+  },
+  "6291dd14": {
+   "text": "Woraus besteht Schnee?",
+   "cat": "task"
+  },
+  "af07fe20": {
+   "text": "Welches Tier bekommt im Winter ein dickeres Fell?",
+   "cat": "task"
   },
   "43d1a928": {
    "text": "Gesundes Essen macht dich stark und fit!",
@@ -837,6 +2569,34 @@
    "text": "Dein Körper braucht viel Wasser, genau wie eine Blume.",
    "cat": "fact"
   },
+  "733189aa": {
+   "text": "Was ist gesünder?",
+   "cat": "task"
+  },
+  "c7e70c39": {
+   "text": "Wann putzt du deine Zähne?",
+   "cat": "task"
+  },
+  "cb5baa90": {
+   "text": "Was solltest du vor dem Essen tun?",
+   "cat": "task"
+  },
+  "dd76d308": {
+   "text": "Wie oft solltest du dich bewegen?",
+   "cat": "task"
+  },
+  "27631a89": {
+   "text": "Was gehört zu einem guten Frühstück?",
+   "cat": "task"
+  },
+  "bb4b6c79": {
+   "text": "Wie viele Mahlzeiten am Tag sind gut?",
+   "cat": "task"
+  },
+  "04a9e5c9": {
+   "text": "Was macht dich müde, wenn du zu wenig davon hast?",
+   "cat": "task"
+  },
   "d617b8c0": {
    "text": "Der Frühling ist da! Alles blüht und wächst.",
    "cat": "intro"
@@ -868,6 +2628,38 @@
   "4e07a888": {
    "text": "Ein Pilz ist gar keine Blume und der Kaktus wächst in der Wüste.",
    "cat": "fact"
+  },
+  "4422fca7": {
+   "text": "Was holt sich die Biene von der Blume?",
+   "cat": "task"
+  },
+  "e3b52ce8": {
+   "text": "Welcher Teil der Pflanze ist unter der Erde?",
+   "cat": "task"
+  },
+  "5d54302c": {
+   "text": "Was wächst aus einem Samenkorn?",
+   "cat": "task"
+  },
+  "e5b2a6e3": {
+   "text": "Welches Tier siehst du im Frühling wieder?",
+   "cat": "task"
+  },
+  "ff24807a": {
+   "text": "Was bauen Vögel im Frühling?",
+   "cat": "task"
+  },
+  "93dc04e5": {
+   "text": "Welche Farbe hat ein frisches Blatt?",
+   "cat": "task"
+  },
+  "5189b3a5": {
+   "text": "Was braucht ein Baum zum Leben?",
+   "cat": "task"
+  },
+  "1c88070b": {
+   "text": "Welche Blume hat einen großen gelben Kopf?",
+   "cat": "task"
   },
   "3ee27595": {
    "text": "Auf dem Bauernhof sind die Tierkinder los!",
@@ -905,6 +2697,46 @@
    "text": "Wie macht die Kuh?",
    "cat": "task"
   },
+  "9ae854b2": {
+   "text": "Wie heißt das Kind vom Hund?",
+   "cat": "task"
+  },
+  "02ff5340": {
+   "text": "Wie heißt das Kind von der Katze?",
+   "cat": "task"
+  },
+  "55c991ce": {
+   "text": "Wie heißt das Kind vom Schwein?",
+   "cat": "task"
+  },
+  "925228d8": {
+   "text": "Wie heißt das Kind vom Pferd?",
+   "cat": "task"
+  },
+  "87de4419": {
+   "text": "Von welchem Tier kommt die Wolle?",
+   "cat": "task"
+  },
+  "eb2ad4d2": {
+   "text": "Von welchem Tier kommen die Eier?",
+   "cat": "task"
+  },
+  "631bb75f": {
+   "text": "Wie macht das Schaf?",
+   "cat": "task"
+  },
+  "779e843b": {
+   "text": "Wie macht das Schwein?",
+   "cat": "task"
+  },
+  "ea7901cb": {
+   "text": "Was frisst eine Kuh am liebsten?",
+   "cat": "task"
+  },
+  "65d89366": {
+   "text": "Wo lebt ein Huhn?",
+   "cat": "task"
+  },
   "657460d5": {
    "text": "Summ, summ! Auf der Wiese ist richtig was los.",
    "cat": "intro"
@@ -935,6 +2767,38 @@
   },
   "a54ad17b": {
    "text": "Wann passiert das? Ziehen oder antippen, dann den richtigen Korb wählen.",
+   "cat": "task"
+  },
+  "ca6a38f0": {
+   "text": "Wie viele Beine hat eine Spinne?",
+   "cat": "task"
+  },
+  "67600979": {
+   "text": "Welches Tier lebt unter der Erde?",
+   "cat": "task"
+  },
+  "2f67b4c2": {
+   "text": "Wofür sind Ameisen bekannt?",
+   "cat": "task"
+  },
+  "49d3ed55": {
+   "text": "Welches Tier ist ein Insekt?",
+   "cat": "task"
+  },
+  "aead8801": {
+   "text": "Was trägt die Schnecke auf dem Rücken?",
+   "cat": "task"
+  },
+  "75c8e1b8": {
+   "text": "Wo wohnen Bienen?",
+   "cat": "task"
+  },
+  "86027c61": {
+   "text": "Was machst du meistens mittags?",
+   "cat": "task"
+  },
+  "49d407ef": {
+   "text": "Was machst du meistens nach der Schule?",
    "cat": "task"
   },
   "5da09c04": {
@@ -972,6 +2836,38 @@
   "eb01c5e6": {
    "text": "Müll in der Natur schadet den Tieren. Eine Plastiktüte bleibt viele Jahre liegen!",
    "cat": "fact"
+  },
+  "a34bfa15": {
+   "text": "Wohin kommt eine Glasflasche?",
+   "cat": "task"
+  },
+  "695616de": {
+   "text": "Wohin kommt eine alte Zeitung?",
+   "cat": "task"
+  },
+  "e48a9533": {
+   "text": "Womit sparst du Wasser?",
+   "cat": "task"
+  },
+  "0affe712": {
+   "text": "Wie kommst du umweltfreundlich zur Schule?",
+   "cat": "task"
+  },
+  "96f4fb7a": {
+   "text": "Was ist gut für die Umwelt?",
+   "cat": "task"
+  },
+  "adbf0907": {
+   "text": "Warum sind Bäume wichtig?",
+   "cat": "task"
+  },
+  "54e1fa2c": {
+   "text": "Was brauchst du im Sommer draußen?",
+   "cat": "task"
+  },
+  "f7b76b5e": {
+   "text": "Was solltest du machen, wenn es sehr heiß ist?",
+   "cat": "task"
   }
  }
 }

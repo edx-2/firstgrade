@@ -42,6 +42,8 @@
     });
   }
 
+  const bankSize = m => (m.activities || []).length + (m.drill || []).length;
+
   function starRow(best) {
     let h = '';
     for (let i=1;i<=3;i++) h += `<span class="${i<=best?'earned':'empty'}">⭐</span>`;
@@ -57,7 +59,9 @@
       `<span class="t-title">${mod.title}</span>` +
       `<span class="t-desc">${mod.desc}</span>` +
       `<span class="t-lb" title="Lernbereich laut LehrplanPLUS">📚 ${mod.lb}</span>` +
-      `<span class="t-stars">${starRow(best)}</span>`;
+      `<span class="t-stars">${starRow(best)}` +
+        `<span class="t-count" title="Aufgaben pro Runde von insgesamt verfügbaren">` +
+        `${Math.min(mod.round, bankSize(mod))} von ${bankSize(mod)}</span></span>`;
     t.onclick = () => startModule(mod);
     return t;
   }
@@ -74,11 +78,30 @@
 
   /* ---------- Spielablauf ---------- */
   const player = $('#player'), stage = $('#stage');
-  let mod = null, idx = 0, firstTryCount = 0;
+  let mod = null, round = [], idx = 0, firstTryCount = 0;
+
+  /** n zufällige Einträge, aber in der ursprünglichen Reihenfolge
+      (die Banken sind nach Schwierigkeit sortiert) */
+  function sampleOrdered(arr, n) {
+    if (n >= arr.length) return arr.slice();
+    return Util.shuffle(arr.map((_, i) => i)).slice(0, n)
+      .sort((a, b) => a - b).map(i => arr[i]);
+  }
+
+  /** Runde zusammenstellen: erst Kernaufgaben (erklären), dann Übung.
+      Ist eine der beiden Quellen zu klein, füllt die andere auf. */
+  function buildRound(m) {
+    const core = m.activities || [], drill = m.drill || [];
+    const n = Math.min(m.round || 10, core.length + drill.length);
+    let nCore = Math.min(core.length, Math.max(2, Math.round(n * 0.4)));
+    let nDrill = Math.min(drill.length, n - nCore);
+    nCore = Math.min(core.length, n - nDrill);   // Rest aus den Kernaufgaben
+    return [...sampleOrdered(core, nCore), ...sampleOrdered(drill, nDrill)];
+  }
 
   function startModule(m) {
     unlock();
-    mod = m; idx = 0; firstTryCount = 0;
+    mod = m; round = buildRound(m); idx = 0; firstTryCount = 0;
     player.classList.remove('hidden');
     document.body.style.overflow = 'hidden';
     if (m.intro) Speech.say(m.intro); // Fuchsi begrüßt; erste Aufgabe reiht sich dahinter ein
@@ -94,7 +117,7 @@
   $('#exitGame').onclick = exitGame;
 
   function setProgress() {
-    const pct = (idx / mod.activities.length) * 100;
+    const pct = (idx / round.length) * 100;
     $('#progressFill').style.width = pct + '%';
     $('#roundStarCount').textContent = firstTryCount;
   }
@@ -113,7 +136,7 @@
     autoSay: t => Speech.queue(t),
     miss: () => feedback(false),
     solved: firstTry => {
-      const a = mod.activities[idx];
+      const a = round[idx];
       if (firstTry) firstTryCount++;
       feedback(true, a.fact);
       Speech.say(Util.praise(), { rate: 1.25, pitch: 1.25 }); // fröhlich!
@@ -121,19 +144,19 @@
       idx++;
       setProgress();
       // mit Erklärung etwas mehr Zeit zum Zuhören lassen
-      setTimeout(() => { idx < mod.activities.length ? runActivity() : finish(); }, a.fact ? 3400 : 1100);
+      setTimeout(() => { idx < round.length ? runActivity() : finish(); }, a.fact ? 3400 : 1100);
     }
   };
 
   function runActivity() {
     setProgress();
-    const a = mod.activities[idx];
+    const a = round[idx];
     Games.render(a.type, stage, a, ctx);
     stage.scrollTop = 0;
   }
 
   function finish() {
-    const n = mod.activities.length;
+    const n = round.length;
     let stars = 1;
     if (firstTryCount >= n) stars = 3;
     else if (firstTryCount >= Math.ceil(n * 0.6)) stars = 2;

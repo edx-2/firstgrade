@@ -34,7 +34,8 @@ const Speakables = (() => {
   const say = {
     mc:      a => a.say || a.q,
     count:   a => a.q || 'Wie viele sind das?',
-    sum:     a => `Wie viel ist ${a.a} ${a.op === '+' ? 'plus' : 'minus'} ${a.b}? Zähl die Felder, wenn du magst.`,
+    // bewusst kurz: beim Üben vieler Aufgaben nacheinander nervt ein langer Satz
+    sum:     a => `Wie viel ist ${a.a} ${a.op === '+' ? 'plus' : 'minus'} ${a.b}?`,
     anlaut:  a => `${a.q || 'Welcher Buchstabe ist am Anfang?'} ${a.word}.`,
     sequence:a => a.say || (a.seq.every(isText) && a.seq.length > 1
                  ? `${a.seq.join(', ')}. ${a.q || 'Was kommt als Nächstes?'}`
@@ -62,7 +63,8 @@ const Speakables = (() => {
     [1, 2, 3].forEach(s => add(finish(s), 'finish'));
     for (const m of modules) {
       add(m.intro, 'intro');
-      for (const a of m.activities) {
+      // Kernaufgaben UND die gesamte Übungsbank – sonst fehlen Clips
+      for (const a of [...(m.activities || []), ...(m.drill || [])]) {
         add(forActivity(a), 'task');
         add(a.fact, 'fact');
       }

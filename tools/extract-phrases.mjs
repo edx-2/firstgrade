@@ -9,19 +9,20 @@
    ============================================================ */
 import { readFileSync, writeFileSync } from 'node:fs';
 import vm from 'node:vm';
-import { createRequire } from 'node:module';
 
-const require = createRequire(import.meta.url);
-const Speakables = require('../js/speakables.js');
-
-// data.js ist ein Browser-Skript -> in einer VM ausführen
-const ctx = {};
+// Browser-Skripte in einer VM ausführen – in derselben Reihenfolge wie
+// in index.html, damit data.js Pools und Speakables sieht.
+const src = p => readFileSync(new URL(p, import.meta.url), 'utf8');
+// TextEncoder ist im frischen VM-Kontext nicht vorhanden, speakables.js
+// braucht es aber für den Hash -> durchreichen.
+const ctx = { module: undefined, TextEncoder, console };
 vm.createContext(ctx);
 vm.runInContext(
-  readFileSync(new URL('../js/data.js', import.meta.url), 'utf8') +
-  '\nthis.MODULES = MODULES;',
+  [src('../js/pools.js'), src('../js/speakables.js'), src('../js/data.js'),
+   'this.MODULES = MODULES; this.Speakables = Speakables;'].join('\n'),
   ctx
 );
+const Speakables = ctx.Speakables;
 
 const phrases = Speakables.collect(ctx.MODULES);
 
